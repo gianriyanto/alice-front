@@ -6,8 +6,9 @@
           Alice.
         </h2>
       </div>
-      <div class="search-container flex h-16 w-full mt-24">
-        <h2 class="self-center font-montserrat text-2xl font-normal tracking-tighter text-lightgrey">
+      <div class="search-container flex flex-row h-10 w-full mt-24">
+        <span class="cursor w-1 h-full bg-gray-300 opacity-40 mr-0.5"></span>
+        <h2 class="self-center font-montserrat text-3xl font-normal tracking-tighter text-lightgrey">
           Search and you shall find
         </h2>
       </div>
@@ -16,13 +17,13 @@
           Trending
         </h3>
         <div class="trending-items h-14/16 mt-2 flex flex-wrap">
-          <span class="item bg-blue-300 opacity-60 h-20 w-20 mr-3 mt-4 rounded-md"/>
-          <span class="item bg-blue-500 opacity-70 h-20 w-20 mr-3 mt-4 rounded-md"/>
-          <span class="item bg-blue-500 opacity-70 h-20 w-20 mr-3 mt-4 rounded-md"/>
-          <span class="item bg-blue-500 opacity-70 h-20 w-20 mr-3 mt-4 rounded-md"/>
-          <span class="item bg-blue-500 opacity-70 h-20 w-20 mr-3 mt-4 rounded-md"/>
-          <span class="item bg-blue-500 opacity-70 h-20 w-20 mr-3 mt-4 rounded-md"/>
-          <span class="item bg-blue-500 opacity-70 h-20 w-20 mr-3 mt-4 rounded-md"/>
+          <span class="item bg-blue-300 opacity-80 h-20 w-20 mr-3 mt-4 rounded-md"/>
+          <span class="item bg-blue-400 opacity-60 h-20 w-20 mr-3 mt-4 rounded-md"/>
+          <span class="item bg-blue-400 opacity-70 h-20 w-20 mr-3 mt-4 rounded-md"/>
+          <span class="item bg-blue-400 opacity-60 h-20 w-20 mr-3 mt-4 rounded-md"/>
+          <span class="item bg-blue-400 opacity-60 h-20 w-20 mr-3 mt-4 rounded-md"/>
+          <span class="item bg-blue-400 opacity-70 h-20 w-20 mr-3 mt-4 rounded-md"/>
+          <span class="item bg-blue-400 opacity-70 h-20 w-20 mr-3 mt-4 rounded-md"/>
         </div>
       </div>
       <div class="explore-container flex-column h-7/16 mt-20">

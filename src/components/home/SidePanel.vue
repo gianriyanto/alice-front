@@ -1,7 +1,7 @@
 <template>
   <div id="side-panel" class="p-6 h-full">
     <div class="content-wrapper rounded-3xl w-full h-full pl-12 pr-12 pt-8 pb-8 bg-bluegrey flex flex-col justify-between">
-      <div class="header flex flex-row justify-between h-14 border-2">
+      <div class="header flex flex-row justify-between h-14">
         <span class="panel-tabs flex flex-row w-6/16">
           <button class="profile-btn mr-8 font-nunito-sans font-bold text-gray-700 text-lg">
             Profile
@@ -10,7 +10,7 @@
             Settings
           </button>
         </span>
-        <span class="user-profile w-14 h-14 rounded-full bg-gray-300"/>
+        <span class="user-profile w-12 h-12 rounded-full bg-gray-300"/>
       </div>
       <div class="body-container flex-grow flex-col pt-16">
         <div class="greeting-container flex flex-row">
