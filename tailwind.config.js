@@ -23,7 +23,8 @@ module.exports = {
     fontFamily: {
       'roboto-slab': ['"Roboto Slab"', 'sans-serif'],
       'montserrat': ['Montserrat', 'sans-serif'],
-      'roboto': ['Roboto', 'sans-serif']
+      'roboto': ['Roboto', 'sans-serif'],
+      'nunito-sans': ['"Nunito Sans"', 'sans-serif']
     },
     fontWeight: {
       'thin': 100,
