@@ -1,6 +1,6 @@
 <template>
-  <div id="side-panel" class="p-6 h-full">
-    <div class="content-wrapper rounded-3xl w-full h-full pl-12 pr-12 pt-8 pb-8 bg-bluegrey flex flex-col justify-between">
+  <div id="side-panel" class="p-4 h-full">
+    <div class="content-wrapper rounded-2xl w-full h-full pl-12 pr-12 pt-8 pb-8 bg-bluegrey flex flex-col justify-between">
       <div class="header flex flex-row justify-between h-14">
         <span class="panel-tabs flex flex-row w-6/16">
           <button class="profile-btn mr-8 font-nunito-sans font-bold text-gray-700 text-lg">

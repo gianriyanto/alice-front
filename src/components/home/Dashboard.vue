@@ -12,7 +12,7 @@
           Search and you shall find
         </h2>
       </div>
-      <div class="trending-container flex-column h-7/16 mt-16">
+      <div class="trending-container flex-column h-7/16 mt-24">
         <h3 class="header h-2/16 font-nunito-sans text-xl font-semibold tracking-tighter text-white">
           Trending
         </h3>
@@ -26,7 +26,7 @@
           <span class="item bg-blue-400 opacity-70 h-20 w-20 mr-3 mt-4 rounded-md"/>
         </div>
       </div>
-      <div class="explore-container flex-column h-7/16 mt-20">
+      <div class="explore-container flex-column h-7/16 mt-24">
         <h3 class="header h-2/16 font-nunito-sans text-xl font-semibold tracking-tighter text-white">
           Explore
         </h3>
