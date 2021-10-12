@@ -21,22 +21,7 @@
         <p class="notifications font-nunito-sans font-normal text-gray-700 tracking-tighter pt-3">
           Glad you're back, you've got <strong> {{ notificationCount }} </strong> new notifications.
         </p>
-        <div class="recents-container flex flex-col h-32 mt-12">
-          <div class="recents-header h-4/16 flex flex-row justify-between">
-            <span class="header font-nunito-sans text-lg font-bold tracking-tighter text-gray-700">
-              Recent
-            </span>
-            <button class="see-all-btn font-nunito-sans text-blue-400 font-medium text-sm">
-              See all
-            </button>
-          </div>
-          <div class="recent-items mt-4 h-32 w-full relative">
-            <preview-card id="preview-card" class="top-0 z-10 absolute"/>
-            <preview-card id="preview-card" class="top-12 z-20 absolute"/>
-            <preview-card id="preview-card" class="top-40 z-30 absolute"/>
-            <preview-card id="preview-card" class="top-52 z-40 absolute shadow-sm"/>
-          </div>
-        </div>
+        <recent id="recent" class="h-32 mt-12"/>
       </div>
       <div class="footer flex flex-row justify-center h-14">
         <button class="add-btn w-12 h-12 flex flex-wrap justify-center content-center rounded-full filter drop-shadow-xl bg-blue-500">
@@ -48,10 +33,10 @@
 </template>
 
 <script>
-import PreviewCard from "../PreviewCard.vue";
+import Recent from "./Recent.vue";
 export default {
   name: "SidePanel",
-  components: {PreviewCard},
+  components: {Recent},
   data: function () {
     return {
       notificationCount: 3
