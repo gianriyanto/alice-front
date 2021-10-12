@@ -6,12 +6,7 @@
           Alice.
         </h2>
       </div>
-      <div class="search-container flex flex-row h-10 w-full mt-24">
-        <span class="cursor w-1 h-full bg-gray-300 opacity-40 mr-0.5"></span>
-        <h2 class="self-center font-montserrat text-3xl font-normal tracking-tighter text-lightgrey">
-          Search and you shall find
-        </h2>
-      </div>
+      <search id="search" class="h-8 w-full mt-24"/>
       <Trending id="trending" class="h-7/16 mt-20"/>
       <Explore id="explore" class="h-7/16 mt-24"/>
     </div>
@@ -21,9 +16,10 @@
 <script>
 import Trending from "./Trending.vue";
 import Explore from "./Explore.vue";
+import Search from "./Search.vue";
 export default {
   name: "Dashboard",
-  components: {Explore, Trending}
+  components: {Search, Explore, Trending}
 }
 </script>
 
