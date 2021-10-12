@@ -2,7 +2,7 @@
   <div id="search">
     <div class="search-container flex flex-row h-full">
       <span class="cursor w-0.5 h-full bg-gray-100 opacity-70 mr-0.5 blink_me"></span>
-      <h2 class="self-center font-montserrat text-2xl font-normal tracking-tighter text-lightgrey">
+      <h2 class="self-center w-full font-montserrat text-2xl font-normal tracking-tighter text-lightgrey">
         Search and you shall find
       </h2>
     </div>
