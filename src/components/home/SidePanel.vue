@@ -21,7 +21,7 @@
         <p class="notifications font-nunito-sans font-normal text-gray-700 tracking-tighter pt-3">
           Glad you're back, you've got <strong> {{ notificationCount }} </strong> new notifications.
         </p>
-        <recent id="recent" class="h-32 mt-12"/>
+        <recent id="recent" class="h-32 mt-8"/>
       </div>
       <div class="footer flex flex-row justify-center h-14">
         <button class="add-btn w-12 h-12 flex flex-wrap justify-center content-center rounded-full filter drop-shadow-xl bg-blue-500 hover:opacity-90 duration-300 ease-in-out">
