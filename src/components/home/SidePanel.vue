@@ -14,9 +14,9 @@
       </div>
       <div class="body-container flex-grow flex-col pt-20">
         <div class="greeting-container flex flex-row">
-          <h1 class="greeting mr-2 font-roboto-slab text-4xl font-extrabold color-darkblue"> Hey </h1>
+          <h1 class="greeting mr-2 font-roboto-slab text-4xl font-extrabold text-lighterblue"> Hey </h1>
           <img class="h-8 w-8 mr-2" src="../../assets/emoji-wave.png" alt="wave-emoji"/>
-          <h1 class="greeting mr-2 font-roboto-slab text-4xl font-semibold color-darkblue"> Edward! </h1>
+          <h1 class="greeting mr-2 font-roboto-slab text-4xl font-semibold text-lighterblue"> Edward! </h1>
         </div>
         <p class="notifications font-nunito-sans font-normal text-gray-700 tracking-tighter pt-3">
           Glad you're back, you've got <strong> {{ notificationCount }} </strong> new notifications.
@@ -24,7 +24,7 @@
         <recent id="recent" class="h-32 mt-12"/>
       </div>
       <div class="footer flex flex-row justify-center h-14">
-        <button class="add-btn w-12 h-12 flex flex-wrap justify-center content-center rounded-full filter drop-shadow-xl bg-blue-500">
+        <button class="add-btn w-12 h-12 flex flex-wrap justify-center content-center rounded-full filter drop-shadow-xl bg-blue-500 hover:opacity-90 duration-300 ease-in-out">
           <i class="ri-add-line" style="font-size: 28px; color: #FFFFFF"></i>
         </button>
       </div>

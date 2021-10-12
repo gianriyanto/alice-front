@@ -6,11 +6,12 @@ module.exports = {
   theme: {
     colors: {
       //palette
-      darkblue: '#151d2f',
+      darkblue: '#0b1a36',
+      lighterblue: '#0d1f40',
       blue: colors.blue,
       lightgrey: 'rgba(191,191,191,0.39)',
       white: '#edf3f5',
-      bluegrey: 'rgb(235,237,246)',
+      bluegrey: 'rgb(227,228,234)',
       //supporting colors
       gray: colors.coolGray,
       indigo: colors.indigo,
