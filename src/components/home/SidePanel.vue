@@ -21,12 +21,12 @@
         <p class="notifications font-nunito-sans font-normal text-gray-700 tracking-tighter pt-3">
           Glad you're back, you've got <strong> {{ notificationCount }} </strong> new notifications.
         </p>
-        <div class="recents-container flex flex-col h-32 mt-8">
+        <div class="recents-container flex flex-col h-32 mt-12">
           <div class="recents-header h-4/16 flex flex-row justify-between">
             <span class="header font-nunito-sans text-lg font-bold tracking-tighter text-gray-700">
               Recent
             </span>
-            <button class="see-all-btn font-nunito-sans text-blue-500 font-medium text-sm">
+            <button class="see-all-btn font-nunito-sans text-blue-400 font-medium text-sm">
               See all
             </button>
           </div>
@@ -39,7 +39,7 @@
         </div>
       </div>
       <div class="footer flex flex-row justify-center h-14">
-        <button class="add-btn w-12 h-12 flex flex-wrap justify-center content-center rounded-full shadow-2xl bg-blue-700 opacity-70">
+        <button class="add-btn w-12 h-12 flex flex-wrap justify-center content-center rounded-full shadow-2xl bg-blue-500 opacity-70">
           <i class="ri-add-line" style="font-size: 28px; color: #FFFFFF"></i>
         </button>
       </div>
