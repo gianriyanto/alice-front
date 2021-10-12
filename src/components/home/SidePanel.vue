@@ -12,11 +12,11 @@
         </span>
         <span class="user-profile w-12 h-12 rounded-full bg-gray-300"/>
       </div>
-      <div class="body-container flex-grow flex-col pt-16">
+      <div class="body-container flex-grow flex-col pt-20">
         <div class="greeting-container flex flex-row">
-          <h1 class="greeting mr-2 font-roboto-slab text-3xl font-extrabold color-darkblue"> Hey </h1>
+          <h1 class="greeting mr-2 font-roboto-slab text-4xl font-extrabold color-darkblue"> Hey </h1>
           <img class="h-8 w-8 mr-2" src="./emoji-wave.png" alt="wave-emoji"/>
-          <h1 class="greeting mr-2 font-roboto-slab text-3xl font-semibold color-darkblue"> Edward! </h1>
+          <h1 class="greeting mr-2 font-roboto-slab text-4xl font-semibold color-darkblue"> Edward! </h1>
         </div>
         <p class="notifications font-nunito-sans font-normal text-gray-700 tracking-tighter pt-3">
           Glad you're back, you've got <strong> {{ notificationCount }} </strong> new notifications.
@@ -39,7 +39,7 @@
         </div>
       </div>
       <div class="footer flex flex-row justify-center h-14">
-        <button class="add-btn w-12 h-12 flex flex-wrap justify-center content-center rounded-full shadow-2xl bg-blue-500 opacity-70">
+        <button class="add-btn w-12 h-12 flex flex-wrap justify-center content-center rounded-full filter drop-shadow-xl bg-blue-500">
           <i class="ri-add-line" style="font-size: 28px; color: #FFFFFF"></i>
         </button>
       </div>
