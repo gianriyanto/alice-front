@@ -15,7 +15,7 @@
       <div class="body-container flex-grow flex-col pt-16">
         <div class="greeting-container flex flex-row">
           <h1 class="greeting mr-2 font-roboto-slab text-3xl font-extrabold color-darkblue"> Hey </h1>
-          <img class="h-8 w-8 mr-2" src="src/assets/emoji-wave.png" alt="wave-emoji"/>
+          <img class="h-8 w-8 mr-2" src="./emoji-wave.png" alt="wave-emoji"/>
           <h1 class="greeting mr-2 font-roboto-slab text-3xl font-semibold color-darkblue"> Edward! </h1>
         </div>
         <p class="notifications font-nunito-sans font-normal text-gray-700 tracking-tighter pt-3">
