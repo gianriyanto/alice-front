@@ -1,17 +1,21 @@
 <template>
   <div id="side-bar">
-    <div class="content-wrapper h-full w-full flex flex-col items-center justify-between pt-12 pb-12">
-      <div class="logo w-full h-16 justify-center flex">
-        <div class="bg-green-300 opacity-60 rounded-xl h-12 w-12"/>
+    <div class="content-wrapper h-full w-full flex flex-col items-center justify-between pt-12 pb-10">
+      <div class="logo w-full pt-1 justify-center flex">
+        <logo id="logo" class="w-10"/>
       </div>
-      <i class="ri-logout-box-r-line" style="font-size: 36px; color: #FFFFFF"/>
+      <button class="logout hover:opacity-60 duration-200 ease-in-out">
+        <i class="ri-logout-box-r-line" style="font-size: 30px; color: #e2e2e2"/>
+      </button>
     </div>
   </div>
 </template>
 
 <script>
+import Logo from "../assets/logo.vue";
 export default {
-  name: "SideBar"
+  name: "SideBar",
+  components: {Logo}
 }
 </script>
 

@@ -3,7 +3,7 @@
     <div class="content-wrapper h-full h-24 w-104 flex flex-col">
       <div class="header-container h-24">
         <h2 class="pt-14 font-roboto-slab font-black text-white text-3xl">
-          Alice.
+          Alette.
         </h2>
       </div>
       <search id="search" class="h-8 w-full mt-24"/>
