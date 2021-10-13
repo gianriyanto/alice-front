@@ -1,5 +1,5 @@
 <template>
-  <div id="side-panel" class="p-4 h-full">
+  <div id="side-panel" class="p-4">
     <div class="content-wrapper rounded-2xl w-full h-full pl-12 pr-12 pt-8 pb-8 bg-bluegrey flex flex-col justify-between">
       <div class="header flex flex-row justify-between h-14">
         <span class="panel-tabs flex flex-row w-6/16">
@@ -20,8 +20,8 @@
         <recent id="recent" class="h-32 mt-8"/>
       </div>
       <div class="footer flex flex-row justify-center h-14">
-        <button class="add-btn w-14 h-14 flex flex-wrap justify-center content-center rounded-2xl
-        filter drop-shadow-2xl bg-blue-600 hover:opacity-90 duration-300 ease-in-out">
+        <button class="add-btn w-12 h-12 flex flex-wrap justify-center content-center rounded-2xl
+        filter drop-shadow-2xl bg-blue-500 hover:opacity-90 duration-300 ease-in-out">
           <i class="ri-add-line" style="font-size: 28px; color: #FFFFFF"></i>
         </button>
       </div>

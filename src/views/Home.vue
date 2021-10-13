@@ -2,8 +2,8 @@
   <body id="Home" class="h-screen w-screen bg-darkblue flex flex-row">
     <side-bar id="side-bar" class="flex-none w-28 mr-8"/>
     <div class="flex flex-row flex-grow">
-      <dashboard id="dashboard" class="w-8/16"/>
-      <side-panel id="side-panel" class="w-8/16 flex-none"/>
+      <dashboard id="dashboard" class="w-8/16 h-full"/>
+      <side-panel id="side-panel" class="w-8/16 h-full flex-none"/>
     </div>
   </body>
 </template>

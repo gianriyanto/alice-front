@@ -11,7 +11,7 @@
       </div>
       <div class="card-body flex flex-row h-12/16 mt-1">
         <span class="indent-bar h-full w-2 mr-3 rounded-md bg-green-400 opacity-50"/>
-        <span class="body-content font-nunito-sans font-light tracking-tighter text-gray-400">
+        <span class="body-content font-nunito-sans font-light tracking-tighter">
           {{ body }}
         </span>
       </div>
