@@ -1,11 +1,11 @@
 <template>
-  <div id="preview-card" class="h-32 w-full bg-white border border-gray-300 rounded-xl pt-2 pl-4 pr-4 pb-4 hover:shadow-lg">
+  <div id="preview-card" class="h-32 w-full rounded-xl pt-2 pl-4 pr-4 pb-4 hover:shadow-lg">
     <div class="card-wrapper h-full flex flex-col justify-around">
       <div class="header h-4/16 flex flex-row justify-between items-center">
-        <span class="title font-montserrat font-semibold tracking-tighter text-md text-gray-400">
+        <span class="title font-montserrat font-semibold tracking-tighter text-md">
           {{ title }}
         </span>
-        <span class="timestamp font-montserrat font-light tracking-tighter text-xs text-gray-500 ">
+        <span class="timestamp font-montserrat font-light tracking-tighter text-xs ">
           {{ createdTimestamp }}
         </span>
       </div>
