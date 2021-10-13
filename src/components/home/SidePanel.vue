@@ -20,7 +20,8 @@
         <recent id="recent" class="h-32 mt-8"/>
       </div>
       <div class="footer flex flex-row justify-center h-14">
-        <button class="add-btn w-12 h-12 flex flex-wrap justify-center content-center rounded-full filter drop-shadow-xl bg-blue-500 hover:opacity-90 duration-300 ease-in-out">
+        <button class="add-btn w-14 h-14 flex flex-wrap justify-center content-center rounded-2xl
+        filter drop-shadow-xl bg-blue-500 hover:opacity-90 duration-300 ease-in-out">
           <i class="ri-add-line" style="font-size: 28px; color: #FFFFFF"></i>
         </button>
       </div>
