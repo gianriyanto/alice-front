@@ -1,7 +1,6 @@
 <template>
-  <div id="logo" class="flex flex-col">
-    <span class="h-3.5 w-full bg-gray-200 rounded-t-md"/>
-    <span class="mt-1.5 h-5 w-full bg-gray-400 rounded-b-md"/>
+  <div id="logo" class="flex justify-center content-center">
+    <img class="w-full h-full" src="../assets/logos/logo-1-white.png" alt="logo"/>
   </div>
 </template>
 
