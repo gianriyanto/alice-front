@@ -14,14 +14,14 @@
           <img class="h-9 w-9 mr-2" src="../../assets/emoji-wave.png" alt="wave-emoji"/>
           <h1 class="greeting mr-2 font-roboto-slab text-3xl font-bold text-lighterblue"> Edward! </h1>
         </div>
-        <p class="notifications font-nunito-sans font-normal text-gray-700 tracking-tighter pt-3">
-          Glad you're back, you've got <strong> {{ notificationCount }} </strong> new notifications.
+        <p class="notifications font-nunito-sans font-normal text-lg text-gray-700 tracking-tighter pt-3">
+          Welcome back, you've got <strong> {{ notificationCount }} </strong> new notifications.
         </p>
         <recent id="recent" class="h-32 mt-8"/>
       </div>
       <div class="footer flex flex-row justify-center h-14">
         <button class="add-btn w-14 h-14 flex flex-wrap justify-center content-center rounded-2xl
-        filter drop-shadow-xl bg-blue-500 hover:opacity-90 duration-300 ease-in-out">
+        filter drop-shadow-2xl bg-blue-600 hover:opacity-90 duration-300 ease-in-out">
           <i class="ri-add-line" style="font-size: 28px; color: #FFFFFF"></i>
         </button>
       </div>
