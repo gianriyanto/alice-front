@@ -10,7 +10,7 @@ module.exports = {
       lighterblue: '#0d1f40',
       blue: colors.blue,
       lightgrey: 'rgba(191,191,191,0.39)',
-      white: '#edf3f5',
+      white: '#f2f6f8',
       bluegrey: 'rgb(229,230,238)',
       //supporting colors
       gray: colors.coolGray,
