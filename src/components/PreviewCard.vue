@@ -1,5 +1,5 @@
 <template>
-  <div id="preview-card" class="h-28 w-full rounded-2xl pt-2 pl-4 pr-4 pb-4 hover:shadow-lg">
+  <div id="preview-card" class="h-28 w-full rounded-2xl pt-4 pl-6 pr-6 pb-4 hover:shadow-lg">
     <div class="card-wrapper h-full flex flex-col justify-around">
       <div class="header h-4/16 flex flex-row justify-between items-center">
         <span class="title font-montserrat font-semibold tracking-tighter text-sm">

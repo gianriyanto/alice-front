@@ -11,7 +11,7 @@ module.exports = {
       blue: colors.blue,
       lightgrey: 'rgba(191,191,191,0.39)',
       white: '#f2f6f8',
-      bluegrey: 'rgb(229,230,238)',
+      bluegrey: 'rgb(239,239,245)',
       //supporting colors
       gray: colors.coolGray,
       indigo: colors.indigo,

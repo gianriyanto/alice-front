@@ -2,10 +2,10 @@
   <div id="recent">
     <div class="recents-container flex flex-col h-full">
       <div class="recents-header h-4/16 flex flex-row justify-between">
-        <span class="header font-nunito-sans text-xl font-semibold tracking-tighter text-gray-700">
+        <span class="header font-nunito-sans text-xl font-bold tracking-tighter text-gray-800">
           Recent
         </span>
-        <button class="see-all-btn font-nunito-sans text-blue-500 font-medium text-sm mr-2">
+        <button class="see-all-btn font-nunito-sans text-blue-400 font-semibold text-sm mr-2">
           See all
         </button>
       </div>

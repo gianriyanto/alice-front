@@ -6,7 +6,7 @@
           Alette.
         </h2>
       </div>
-      <search id="search" class="h-8 w-full mt-24"/>
+      <search id="search" class="h-8 w-full mt-16"/>
       <Trending id="trending" class="h-7/16 mt-20 w-96"/>
       <Explore id="explore" class="h-7/16 mt-24"/>
     </div>
