@@ -1,16 +1,16 @@
 <template>
-  <div id="preview-card" class="h-28 w-full rounded-xl pt-4 pl-6 pr-6 pb-4 mt-2 hover:shadow-sm">
-    <div class="card-wrapper h-full flex flex-col justify-around">
+  <div id="preview-card" class="w-full rounded-xl pl-6 pr-6 mt-2 hover:shadow-sm">
+    <div class="card-wrapper h-32 min-h-fit pb-4 pt-4 min-h-fit flex flex-col justify-around">
       <div class="header h-4/16 flex flex-row justify-between items-center">
-        <span class="title font-nunito-sans font-bold tracking-tighter text-lg">
+        <span class="title font-nunito-sans font-bold tracking-tighter text-md">
           {{ title }}
         </span>
         <span class="timestamp font-nunito-sans font-light tracking-tighter text-xs">
           {{ createdTimestamp }}
         </span>
       </div>
-      <div class="card-body flex flex-row h-12/16 mt-1">
-        <span class="indent-bar h-full w-2 mr-3 rounded bg-green-400 opacity-50"/>
+      <div class="card-body flex flex-row h-12/16 w-14/16">
+        <span class="indent-bar h-full w-3 mr-3 bg-green-400 opacity-40"/>
         <span class="body-content font-nunito-sans font-light tracking-tighter text-sm">
           {{ body }}
         </span>

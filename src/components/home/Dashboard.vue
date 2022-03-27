@@ -13,10 +13,10 @@
           <h1 class="greeting mr-2 font-roboto-slab text-3xl font-extrabold tracking-tight text-lighterblue"> Edward! </h1>
         </div>
         <span class="message-container mt-2">
-          <h2 class="font-roboto-slab font-semibold tracking-tight text-md text-gray-700"> You have 2 recently answered questions </h2>
+          <h2 class="font-roboto-slab font-semibold tracking-tight text-md text-gray-400"> You have 2 recently answered questions </h2>
         </span>
       </div>
-      <Search id="Search" class="h-8 w-full mt-10"/>
+      <Search id="Search" class="h-8 w-full mt-12"/>
       <Trending id="trending" class="h-7/16 mt-16 w-96"/>
       <Explore id="explore" class="h-7/16 mt-16"/>
     </div>
