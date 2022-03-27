@@ -1,12 +1,14 @@
 <template>
   <div>
-    <Home id="Home" class-=""/>
+    <Home id="Home" class=""/>
+    <Explore id="Explore" class=""/>
   </div>
 </template>
 
 <script setup>
 
 import Home from './views/Home.vue'
+import Explore from "./views/Explore.vue";
 
 </script>
 

@@ -16,7 +16,7 @@
           <h2 class="font-roboto-slab font-semibold tracking-tight text-md text-gray-400"> You have 2 recently answered questions </h2>
         </span>
       </div>
-      <Search id="Search" class="h-8 w-full mt-12"/>
+      <Search id="Search" class="h-8 w-full mt-4"/>
       <Trending id="trending" class="h-7/16 mt-16 w-96"/>
       <Explore id="explore" class="h-7/16 mt-16"/>
     </div>

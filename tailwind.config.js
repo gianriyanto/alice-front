@@ -13,6 +13,7 @@ module.exports = {
       lightgrey: 'rgba(191,191,191,0.39)',
       white: '#f6f6f6',
       sidepanel: 'rgb(239,239,243)',
+      filterbar: 'rgb(239,239,243)',
       //supporting colors
       gray: colors.coolGray,
       indigo: colors.indigo,
