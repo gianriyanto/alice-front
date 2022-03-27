@@ -2,8 +2,8 @@
   <div id="search">
     <div class="search-container flex flex-row h-full">
       <span class="cursor w-0.5 h-full bg-gray-800 opacity-70 mr-0.5 blink_me"></span>
-      <h2 class="self-center w-full font-montserrat text-2xl font-normal tracking-tighter text-gray-400">
-        Search and you shall find
+      <h2 class="self-center w-full font-nunito-sans text-2xl font-normal tracking-normal text-gray-400">
+        Search and you shall find...
       </h2>
     </div>
   </div>

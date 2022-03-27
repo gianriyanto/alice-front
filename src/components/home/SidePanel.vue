@@ -8,11 +8,11 @@
         <img class="user-profile w-12 h-12 rounded-full" src="../../assets/my-portrait.png" alt="user-profile-photo"/>
       </div>
       <div class="body-container flex-grow flex-col pt-10">
-        <div class="greeting-container flex flex-row">
-          <h1 class="greeting mr-2 font-roboto-slab text-3xl font-extrabold tracking-tight text-lighterblue"> Hey </h1>
-          <img class="h-9 w-9 mr-2" src="../../assets/emoji-wave.png" alt="wave-emoji"/>
-          <h1 class="greeting mr-2 font-roboto-slab text-3xl font-semibold tracking-tight text-lighterblue"> Edward! </h1>
-        </div>
+<!--        <div class="greeting-container flex flex-row">-->
+<!--          <h1 class="greeting mr-2 font-roboto-slab text-3xl font-extrabold tracking-tight text-lighterblue"> Hey </h1>-->
+<!--          <img class="h-9 w-9 mr-2" src="../../assets/emoji-wave.png" alt="wave-emoji"/>-->
+<!--          <h1 class="greeting mr-2 font-roboto-slab text-3xl font-semibold tracking-tight text-lighterblue"> Edward! </h1>-->
+<!--        </div>-->
         <recent id="recent" class="h-32 mt-8"/>
       </div>
 <!--      <div class="footer flex flex-row justify-center h-14">-->
