@@ -1,6 +1,6 @@
 <template>
   <div id="dashboard" class="flex flex-row justify-center">
-    <div class="content-wrapper h-full h-24 w-104 flex flex-col">
+    <div class="content-wrapper h-full h-24 w-10/16 flex flex-col">
       <div class="header-container h-24">
         <h2 class="pt-14 font-roboto-slab font-black text-gray-800 text-3xl">
           Alette.

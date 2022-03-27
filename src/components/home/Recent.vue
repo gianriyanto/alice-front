@@ -10,10 +10,10 @@
         </button>
       </div>
       <div class="recent-items mt-2 h-24 w-full relative">
-        <preview-card id="preview-card" class="text-gray-400 top-2 z-10 border bg-white border-bluegrey" title="Test vs Behavior Driven Design." created-timestamp="Today" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"/>
-        <preview-card id="preview-card" class="text-gray-700 top-14 z-20 border bg-white border-bluegrey" title="Why should you use props?" created-timestamp="Yesterday" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt exercitation aliquip ex ea commodo consequat."/>
-        <preview-card id="preview-card" class="text-gray-400 top-40 z-30 border bg-white border-bluegrey" title="Is it worth using dataclasses?" created-timestamp="11 Oct" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"/>
-        <preview-card id="preview-card" class="text-gray-400 top-52 z-40 border bg-white border-bluegrey" title="Why can't I connect to VPN?" created-timestamp="10 Oct" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt"/>
+        <preview-card id="preview-card" class="text-gray-700 top-2 z-10 border bg-white border-bluegrey" title="Test vs Behavior Driven Design." created-timestamp="Today" body="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ipsum dolor sit amet"/>
+        <preview-card id="preview-card" class="text-gray-700 top-14 z-20 border bg-white border-bluegrey" title="Unit tests and data mocking." created-timestamp="Yesterday" body="Lorem consectetur ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt exercitation aliquip ex ea commodo consequat."/>
+        <preview-card id="preview-card" class="text-gray-700 top-40 z-30 border bg-white border-bluegrey" title="How to deploy terraform?" created-timestamp="11 Oct" body="Lorem ipsum dolor sit amet, consectetur eiusmoda dipiscing elit, sed do eiusmod tempor incididunt eiusmod"/>
+        <preview-card id="preview-card" class="text-gray-700 top-52 z-40 border bg-white border-bluegrey" title="Why can't I connect to VPN?" created-timestamp="10 Oct" body="Lorem ipsum dolor sit consectetur amet, eiusmod consectetur adipiscing dolor elit, sed do eiusmod dolor tempor incididunt"/>
       </div>
     </div>
   </div>
