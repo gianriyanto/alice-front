@@ -8,12 +8,12 @@
 <!--      </div>-->
       <div class="header-container flex flex-col">
         <div class="greeting-container flex flex-row mt-28">
-          <h1 class="greeting mr-2 font-roboto-slab text-3xl font-black tracking-tight text-lighterblue"> Hey </h1>
+          <h1 class="greeting mr-2 font-roboto-slab text-4xl font-black tracking-tight text-lighterblue"> Hey </h1>
           <img class="h-9 w-9 mr-2" src="../../assets/emoji-wave.png" alt="wave-emoji"/>
-          <h1 class="greeting mr-2 font-roboto-slab text-3xl font-extrabold tracking-tight text-lighterblue"> Edward! </h1>
+          <h1 class="greeting mr-2 font-roboto-slab text-4xl font-extrabold tracking-tight text-lighterblue"> Edward! </h1>
         </div>
         <span class="message-container mt-2">
-          <h2 class="font-roboto-slab font-semibold tracking-tight text-md text-gray-400"> You have 2 recently answered questions </h2>
+          <h2 class="font-roboto-slab font-semibold tracking-normal text-md text-gray-400"> You have 2 recently answered questions </h2>
         </span>
       </div>
       <Search id="Search" class="h-8 w-full mt-4"/>
