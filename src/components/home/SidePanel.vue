@@ -1,10 +1,10 @@
 <template>
   <div id="side-panel" class="p-4">
-    <div class="content-wrapper rounded-3xl w-full h-full pl-12 pr-12 pt-8 pb-8 bg-bluegrey flex flex-col justify-between">
+    <div class="content-wrapper rounded-xl w-full h-full pl-12 pr-12 pt-8 pb-8 bg-sidepanel flex flex-col justify-between border">
       <div class="header flex flex-row justify-between h-14">
         <span class="panel-tabs flex flex-row w-6/16">
           <button class="profile-btn mr-8 font-nunito-sans font-bold text-gray-700 text-md"> Profile </button>
-          <button class="settings-btn mr-8 font-nunito-sans font-bold text-gray-700 text-md"> Settings </button>
+<!--          <button class="settings-btn mr-8 font-nunito-sans font-bold text-gray-700 text-md"> Settings </button>-->
         </span>
         <img class="user-profile w-12 h-12 rounded-full" src="../../assets/my-portrait.png" alt="user-profile-photo"/>
       </div>
