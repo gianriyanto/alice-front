@@ -1,7 +1,7 @@
 <template>
- <body id="Explore" class="h-screen w-screen flex flex-row bg-background">
-    <filter-bar id="filter-bar" class="w-3/16"/>
-    <feed id="feed" class=""/>
+ <body id="Explore" class="flex flex-row bg-background">
+    <filter-bar id="filter-bar" class="w-1/5"/>
+    <feed id="feed" class="w-4/5"/>
   </body>
 </template>
 

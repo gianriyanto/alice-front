@@ -1,7 +1,13 @@
 <template>
   <div>
-    <Home id="Home" class=""/>
-    <Explore id="Explore" class=""/>
+    <div id="app-wrapper" class="flex flex-row w-screen bg-background">
+<!--      <side-bar id="side-bar" class="sticky top-0 h-screen flex-none w-24"/>-->
+      <div class="flex flex-col">
+        <side-bar id="side-bar" class="fixed top-0 h-screen flex-none w-24"/>
+        <Home id="Home" class="h-screen"/>
+        <Explore id="Explore" class="h-screen"/>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -9,6 +15,7 @@
 
 import Home from './views/Home.vue'
 import Explore from "./views/Explore.vue";
+import SideBar from "./components/SideBar.vue";
 
 </script>
 

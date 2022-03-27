@@ -1,6 +1,6 @@
 <template>
   <div id="filter-bar" class="">
-    <div class="content-wrapper w-full h-full flex flex-col bg-filterbar">
+    <div class="content-wrapper bg-filterbar w-full h-full flex flex-col">
     </div>
   </div>
 </template>
