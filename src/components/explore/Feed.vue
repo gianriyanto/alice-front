@@ -1,11 +1,11 @@
 <template>
   <div id="feed" class="">
-    <div class="content-wrapper h-full flex flex-col pl-10">
+    <div class="content-wrapper h-full flex flex-col">
       <search id="search" class="pl-10 pt-16"/>
       <div class="content-wrapper h-full flex flex-row">
-        <channels id="channels" class="pl-2 pt-16"/>
-        <thread-results id="thread-results" class="w-7/16 pt-12"/>
-        <thread id="thread" class="w-9/16 pl-12 pr-12 pt-48"/>
+        <channels id="channels" class="w-1/18 pl-10 pt-16"/>
+        <thread-results id="thread-results" class="w-7/16 pl-8 pt-12"/>
+        <thread id="thread" class="w-8/16 pl-8 pr-12 pt-48"/>
       </div>
     </div>
   </div>
