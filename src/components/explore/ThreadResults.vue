@@ -1,10 +1,10 @@
 <template>
   <div id="thread-results" class="">
     <div class="thread-container flex flex-col">
-      <preview-card id="preview-card" class="text-gray-700 border bg-white border-bluegrey" title="Test vs Behavior Driven Design." created-timestamp="Today" body="Lorem ipsum dolor sit amet, consectetur tempor elit adipiscing elit, sed do eiusmod sit tempor incididunt elit ipsum dolor sit amet"/>
-      <preview-card id="preview-card" class="text-gray-700 border bg-white border-bluegrey" title="How to deploy terraform?" created-timestamp="11 Oct" body="Lorem ipsum dolor sit amet, consectetur eiusmoda dipiscing elit, sed do eiusmod tempor incididunt eiusmod"/>
-      <preview-card id="preview-card" class="text-gray-700 border bg-white border-bluegrey" title="Why can't I connect to VPN?" created-timestamp="10 Oct" body="Lorem ipsum dolor sit consectetur amet, eiusmod consectetur adipiscing dolor elit, sed do eiusmod dolor tempor incididunt"/>
-      <preview-card id="preview-card" class="text-gray-700 border bg-white border-bluegrey" title="Thoughts on an anti-corruption layer." created-timestamp="Yesterday" body="Consectetur adipiscing elit, sed do eiusmod tempor incididunt exercitation aliquip ex ea commodo consequat."/>
+      <preview-card id="preview-card" class="text-gray-700 border bg-white border-bluegrey" title="Test vs Behavior Driven Design." created-timestamp="Today" body="Lorem ipsum dolor sit amet, consectetur tempor elit adipiscing elit, sed do ipsum dolor sit amet"/>
+      <preview-card id="preview-card" class="text-gray-700 border bg-white border-bluegrey" title="How to deploy terraform?" created-timestamp="11 Oct" body="Lorem ipsum dolor sit amet, eiusmoda dipiscing elit, sed do eiusmod tempor incididunt eiusmod"/>
+      <preview-card id="preview-card" class="text-gray-700 border bg-white border-bluegrey" title="Why can't I connect to VPN?" created-timestamp="10 Oct" body="Lorem ipsum dolor sit consectetur amet, eiusmod dolor elit, sed do eiusmod dolor tempor incididunt"/>
+      <preview-card id="preview-card" class="text-gray-700 border bg-white border-bluegrey" title="Thoughts on an anti-corruption layer." created-timestamp="Yesterday" body="Adipiscing elit, sed tempor incididunt exercitation aliquip ex ea commodo consequat."/>
     </div>
   </div>
 </template>
