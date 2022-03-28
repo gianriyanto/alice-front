@@ -8,13 +8,18 @@
           {{ title }}
         </span>
       </div>
-      <div class="body-container flex flex-row pt-2">
-        <span class="indent-bar w-2 h-full w-2 mr-3 bg-green-400 opacity-40"/>
-        <span class="font-nunito-sans font-medium tracking-tighter text-sm text-gray-600">
-          {{ response }}
-        </span>
-      </div>
-      <div class="response-container">
+      <div class="body-container flex flex-col pt-2 w-full">
+        <div class="flex flex-row pt-2 w-14/16">
+          <span class="indent-bar w-2 h-full w-2 mr-3 bg-green-400 opacity-40"/>
+          <span class="font-nunito-sans font-medium tracking-tighter text-sm text-gray-600">
+            {{ response }}
+          </span>
+        </div>
+        <div class="flex flex-wrap pt-4 w-13/16">
+          <span v-for="tag in tags" class="mr-2">
+            <tag id="tag" :tag="tag"></tag>
+          </span>
+        </div>
 
       </div>
     </div>
@@ -23,13 +28,15 @@
 
 <script>
 import Status from "../Status.vue";
+import Tag from "./Tag.vue";
 export default {
   name: "ThreadDetail",
-  components: {Status},
+  components: {Tag, Status},
   data() {
 		return {
       title: "Anaemic domain models and ORMs?",
-      response: "ORMs don't enable the creation of Rich Domain models (as some people mentioned), but it does simplify the the amount of (often repetitive) work."
+      response: "ORMs don't enable the creation of Rich Domain models (as some people mentioned), but it does simplify the the amount of (often repetitive) work.",
+      tags: ["ORM", "Domain Driven Design", "peewee"]
     }
   }
 }
