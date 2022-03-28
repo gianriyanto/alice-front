@@ -1,17 +1,17 @@
 <template>
-  <div id="preview-card" class="w-full rounded-xl pl-6 pr-6 mt-2 hover:shadow-sm">
-    <div class="card-wrapper h-32 min-h-fit pb-4 pt-4 min-h-fit flex flex-col justify-around">
-      <div class="header h-4/16 flex flex-row justify-between items-center">
-        <span class="title font-nunito-sans font-bold tracking-tighter text-md">
+  <div id="preview-card" class="w-full h-24 rounded-lg mt-2 pl-6 pr-6 hover:shadow-sm">
+    <div class="card-wrapper h-full min-h-fit flex flex-col justify-center">
+      <div class="header flex flex-row justify-between items-center">
+        <span class="title font-nunito-sans font-bold tracking-tighter text-md text-gray-700">
           {{ title }}
         </span>
         <span class="timestamp font-nunito-sans font-light tracking-tighter text-xs">
           {{ createdTimestamp }}
         </span>
       </div>
-      <div class="card-body flex flex-row h-12/16 w-14/16">
-        <span class="indent-bar h-full w-3 mr-3 bg-green-400 opacity-40"/>
-        <span class="body-content font-nunito-sans font-light tracking-tighter text-sm">
+      <div class="card-body flex flex-row w-14/16 pt-1">
+        <span class="indent-bar h-full w-2 mr-3 bg-green-400 opacity-40"/>
+        <span class="body-content font-nunito-sans font-light tracking-tighter text-sm text-gray-500">
           {{ body }}
         </span>
       </div>
