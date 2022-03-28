@@ -5,7 +5,7 @@
       <div class="content-wrapper h-full flex flex-row">
         <channels id="channels" class="w-1/18 pl-10 pt-16"/>
         <thread-results id="thread-results" class="w-7/16 pl-8 pt-12"/>
-        <thread id="thread" class="w-8/16 pl-8 pr-12 pt-48"/>
+        <thread-detail id="thread-detail" class="w-8/16 pl-8 pr-12 pt-48"/>
       </div>
     </div>
   </div>
@@ -15,10 +15,11 @@
 import Channels from "./Channels.vue";
 import ThreadResults from "./ThreadResults.vue";
 import Search from "../home/Search.vue";
-import Thread from "./Thread.vue";
+import ThreadDetail from "./ThreadDetail.vue";
+
 export default {
   name: "feed",
-  components: {Thread, Search, ThreadResults, Channels}
+  components: {ThreadDetail, Search, ThreadResults, Channels}
 }
 </script>
 
