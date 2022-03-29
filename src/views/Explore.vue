@@ -1,5 +1,5 @@
 <template>
- <body id="Explore" class="flex flex-row bg-background">
+ <body id="Explore" class="flex flex-row bg-slate-600">
     <filter-bar id="filter-bar" class="w-4/16"/>
     <feed id="feed" class="w-12/16"/>
   </body>

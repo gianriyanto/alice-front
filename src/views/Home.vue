@@ -1,5 +1,5 @@
 <template>
-  <body id="Home" class="bg-background flex flex-row">
+  <body id="Home" class="flex flex-row">
     <div class="flex flex-row flex-grow">
       <dashboard id="dashboard" class="w-10/16 h-full"/>
       <side-panel id="side-panel" class="w-6/16 h-full flex-none"/>

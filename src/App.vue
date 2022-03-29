@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div id="app-wrapper" class="flex flex-row w-screen bg-background">
+    <div id="app-wrapper" class="bg-slate50 flex flex-row w-screen">
       <div class="flex flex-col">
         <side-bar id="side-bar" class="fixed top-0 h-screen flex-none w-24"/>
         <Home id="Home" class="h-screen"/>
