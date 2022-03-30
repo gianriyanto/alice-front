@@ -1,7 +1,7 @@
 <template>
   <div id="search" class="cursor-pointer">
     <div class="search-container flex flex-row h-full">
-      <span class="cursor w-0.5 h-full bg-gray-600 opacity-50 mr-0.5 blink_me"></span>
+      <span class="cursor w-0.5 h-full bg-gray-700 opacity-50 mr-0.5 blink_me"></span>
       <h2 class="self-center w-full font-nunito-sans text-2xl font-semibold tracking-tight text-gray-300">
         Search and you shall find...
       </h2>
@@ -23,7 +23,7 @@ export default {
 
 @keyframes blinker {
   50% {
-    opacity: 0;
+    opacity: 0.2;
   }
 }
 
