@@ -12,7 +12,7 @@
         </span>
       </div>
       <search id="search" class="h-8 w-full mt-12"/>
-      <Trending id="trending" class="h-7/16 mt-16 w-96"/>
+      <Trending id="trending" class="h-7/16 mt-14 w-96"/>
       <Explore id="explore" class="h-7/16 mt-16"/>
     </div>
   </div>
