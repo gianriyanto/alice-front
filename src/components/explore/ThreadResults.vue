@@ -6,9 +6,9 @@
                     created-timestamp="Today"
                     body="Lorem ipsum dolor sit amet, consectetur tempor elit adipiscing elit, sed do ipsum dolor sit amet"/>
       <preview-card id="preview-card"
-                    class="text-gray-700 border bg-white border-zinc400"
+                    class="text-gray-700 border bg-slate50 border-zinc400"
                     title="Anaemic domain models and ORMs?"
-                    created-timestamp="11 Oct"
+                    created-timestamp="Yesterday"
                     body="Lorem ipsum dolor sit amet, eiusmoda dipiscing elit, sed do eiusmod tempor incididunt eiusmod"/>
       <preview-card id="preview-card"
                     class="text-gray-700 border bg-white"

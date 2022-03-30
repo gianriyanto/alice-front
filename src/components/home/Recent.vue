@@ -30,6 +30,11 @@
                       title="Thoughts on an anti-corruption layer."
                       created-timestamp="Yesterday"
                       body="Consectetur adipiscing elit, sed do eiusmod tempor exercitation aliquip ex ea commodo consequat."/>
+        <preview-card id="preview-card"
+                      class="text-gray-700 border bg-slate50"
+                      title="Anaemic domain models and ORMs?"
+                      created-timestamp="Yesterday"
+                      body="Consectetur adipiscing elit, sed do eiusmod exercitation aliquip ex ea commodo consequat."/>
       </div>
     </div>
   </div>

@@ -1,27 +1,32 @@
 <template>
   <div id="thread-detail" class="">
-    <div class="thread-wrapper flex flex-col h-96 pl-7 pr-2 pt-7 pb-2 w-full
-                rounded-xl border bg-white border-zinc300 shadow-xl">
+    <div class="thread-wrapper flex flex-col h-96 pl-7 pt-7 pb-2 w-full
+                rounded-xl border bg-slate50 border-zinc400">
       <div class="header-container flex flex-col">
-        <span class="top flex flex-row">
-          <channel id="channel" class="mr-2" :channel="channel"/>
-          <status id="status" class="" :status="status"/>
-        </span>
-        <span class="title pt-2 font-nunito-sans font-extrabold tracking-tighter text-xl text-gray-700">
+        <div class="top flex flex-row justify-between">
+          <span class="flex flex-row">
+            <channel id="channel" class="mr-3" :channel="channel"/>
+            <status id="status" class="" :status="status"/>
+          </span>
+          <span class="date pr-6 font-nunito-sans font-regular tracking-tighter text-xs text-gray-500">
+            {{ created_date }}
+          </span>
+        </div>
+        <div class="title pt-4 font-nunito-sans font-extrabold tracking-tighter text-xl text-gray-700">
           {{ title }}
-        </span>
-        <span class="description w-14/16 pt-1 font-nunito-sans font-regular tracking-tighter text-sm text-gray-500">
+        </div>
+        <div class="description w-14/16 pt-2 font-nunito-sans font-regular tracking-tighter text-sm text-gray-500">
           {{ description }}
-        </span>
+        </div>
       </div>
-      <div class="body-container flex flex-col w-full">
-        <div class="flex flex-row pt-3 w-15/16">
+      <div class="body-container flex flex-col w-full pt-5 w-15/16">
+        <div class="flex flex-row">
           <span class="indent-bar w-5 h-full w-2 mr-4 bg-green-400 opacity-40"/>
           <span class="response-container flex flex-col">
             <span class="response-container font-nunito-sans font-semibold tracking-tighter text-sm text-gray-700">
               {{ response }}
             </span>
-            <span class="action-container flex flex-row pt-3">
+            <span class="action-container flex flex-row pt-4">
               <action id="action" class="mr-2 border-green-600 hover:bg-green-50 text-green-700" action-type="Respond"/>
               <action id="action" class="mr-2 border-indigo-300 hover:bg-indigo-100 text-indigo-500" action-type="Invite to answer"/>
               <action id="action" class="mr-2 border-zinc400 hover:bg-zinc50 text-zinc700" action-type="Keep me posted"/>
@@ -53,6 +58,7 @@ export default {
   components: {Action, React, Channel, Tag, Status},
   data() {
 		return {
+      created_date: "Yesterday",
       title: "Anaemic domain models and ORMs?",
       description: "Rolling the Persistence Model as the Domain Model seems severely off too due to Object Relational Impedence Missmatch.",
       response: "ORMs don't enable the creation of Rich Domain models, it simplifies the amount of (often repetitive) work. Making your domain model anemic with all business logic in services won't save you from boilerplate DTO mapping code.",
