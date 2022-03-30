@@ -5,7 +5,7 @@
       <div class="content-wrapper h-full flex flex-row">
         <channels id="channels" class="w-1/18 pl-10 pt-16"/>
         <thread-results id="thread-results" class="w-7/16 pl-8 pt-12"/>
-        <thread-detail id="thread-detail" class="w-8/16 pl-8 pr-12 pt-48"/>
+        <thread-detail id="thread-detail" class="w-8/16 pl-8 pr-10 pt-48"/>
       </div>
     </div>
   </div>

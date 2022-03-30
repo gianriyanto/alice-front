@@ -62,7 +62,8 @@ module.exports = {
       red: colors.rose,
       yellow: colors.amber,
       pink: colors.pink,
-      green: colors.emerald
+      green: colors.emerald,
+      teal: colors.teal
 
     },
     fontFamily: {

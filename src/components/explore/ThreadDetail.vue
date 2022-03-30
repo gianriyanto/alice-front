@@ -1,7 +1,7 @@
 <template>
   <div id="thread-detail" class="">
     <div class="thread-wrapper flex flex-col h-96 pl-7 pr-2 pt-7 pb-2 w-full
-                rounded-xl border bg-white border-gray-300">
+                rounded-xl border bg-white border-zinc300 shadow-xl">
       <div class="header-container flex flex-col">
         <span class="top flex flex-row">
           <channel id="channel" class="mr-2" :channel="channel"/>
@@ -16,15 +16,15 @@
       </div>
       <div class="body-container flex flex-col w-full">
         <div class="flex flex-row pt-3 w-15/16">
-          <span class="indent-bar w-5 h-full w-2 mr-3 bg-green-400 opacity-40"/>
+          <span class="indent-bar w-5 h-full w-2 mr-4 bg-green-400 opacity-40"/>
           <span class="response-container flex flex-col">
             <span class="response-container font-nunito-sans font-semibold tracking-tighter text-sm text-gray-700">
               {{ response }}
             </span>
             <span class="action-container flex flex-row pt-3">
-              <action id="action" class="mr-2" action-type="Respond"/>
-              <action id="action" class="mr-2" action-type="Keep me posted"/>
-              <action id="action" action-type="Invite to answer"/>
+              <action id="action" class="mr-2 border-green-600 hover:bg-green-50 text-green-700" action-type="Respond"/>
+              <action id="action" class="mr-2 border-indigo-300 hover:bg-indigo-100 text-indigo-500" action-type="Invite to answer"/>
+              <action id="action" class="mr-2 border-zinc400 hover:bg-zinc50 text-zinc700" action-type="Keep me posted"/>
             </span>
           </span>
         </div>
@@ -44,7 +44,7 @@
 
 <script>
 import Status from "../Status.vue";
-import Tag from "./Tag.vue";
+import Tag from "../Tag.vue";
 import Channel from "../Channel.vue";
 import React from "../React.vue";
 import Action from "../Action.vue";
