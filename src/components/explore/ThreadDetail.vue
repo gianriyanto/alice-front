@@ -1,6 +1,6 @@
 <template>
   <div id="thread-detail" class="">
-    <div class="thread-wrapper flex flex-col h-96 pl-7 pt-7 pb-2 w-full
+    <div class="thread-wrapper flex flex-col h-98 pl-7 pt-7 w-full
                 rounded-xl border bg-slate50 border-zinc400">
       <div class="header-container flex flex-col">
         <div class="top flex flex-row justify-between">
@@ -15,11 +15,11 @@
         <div class="title pt-4 font-nunito-sans font-extrabold tracking-tighter text-xl text-gray-700">
           {{ title }}
         </div>
-        <div class="description w-14/16 pt-2 font-nunito-sans font-regular tracking-tighter text-sm text-gray-500">
+        <div class="description w-14/16 pt-1 font-nunito-sans font-regular tracking-tighter text-sm text-gray-500">
           {{ description }}
         </div>
       </div>
-      <div class="body-container flex flex-col w-full pt-5 w-15/16">
+      <div class="body-container flex flex-col w-full pt-3 w-15/16">
         <div class="flex flex-row">
           <span class="indent-bar w-5 h-full w-2 mr-4 bg-green-400 opacity-40"/>
           <span class="response-container flex flex-col">
@@ -33,14 +33,21 @@
             </span>
           </span>
         </div>
-        <div class="tags-container flex flex-wrap pt-6 w-13/16">
-          <span v-for="tag in tags" class="mr-2">
-            <tag id="tag" :tag="tag"></tag>
+        <div class="footer-container flex flex-col pt-5 justify-between">
+          <span class="tags-container flex flex-wrap">
+            <span v-for="tag in tags" class="mr-2">
+              <tag id="tag" :tag="tag"></tag>
+            </span>
           </span>
-        </div>
-        <div class="react-container flex flex-row pt-4">
-          <!-- <react id="react" reaction-type="+1" class="mr-2"/>-->
-          <!-- <react id="react" reaction-type="look" class=""/>-->
+          <span class="more pt-4 h-8 cursor-pointer">
+            <button class="font-nunito-sans font-bold tracking-tight text-sm text-blue-400">
+              See more
+            </button>
+          </span>
+<!--          <div class="react-container flex flex-row pt-4">-->
+            <!-- <react id="react" reaction-type="+1" class="mr-2"/>-->
+            <!-- <react id="react" reaction-type="look" class=""/>-->
+<!--          </div>-->
         </div>
       </div>
     </div>
@@ -62,7 +69,7 @@ export default {
       title: "Anaemic domain models and ORMs?",
       description: "Rolling the Persistence Model as the Domain Model seems severely off too due to Object Relational Impedence Missmatch.",
       response: "ORMs don't enable the creation of Rich Domain models, it simplifies the amount of (often repetitive) work. Making your domain model anemic with all business logic in services won't save you from boilerplate DTO mapping code.",
-      tags: ["ORM", "Domain Driven Design", "peewee"],
+      tags: ["ORM", "Domain-driven-design", "Peewee", "Repository"],
       status: "open",
       channel: "#TECH"
     }
