@@ -20,10 +20,8 @@
 </template>
 
 <script>
-import Status from "./Status.vue";
 export default {
   name: "previewCard",
-  components: {Status},
   props: [
     "title", "body", "createdTimestamp"
   ]

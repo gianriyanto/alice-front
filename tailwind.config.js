@@ -19,6 +19,7 @@ module.exports = {
       '7xl': '5rem',
     },
     colors: {
+      transparent: 'transparent',
       // slate
       slate50: '#f8fafc',
       slate100: '#f1f5f9',
