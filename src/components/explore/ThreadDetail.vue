@@ -21,14 +21,14 @@
       </div>
       <div class="body-container flex flex-col w-full pt-3 w-15/16">
         <div class="flex flex-row">
-          <span class="indent-bar w-5 h-full w-2 mr-4 bg-green-400 opacity-40"/>
+          <span class="indent-bar w-5 h-full w-2 mr-4 bg-blue-400 opacity-80 rounded"/>
           <span class="response-container flex flex-col">
-            <span class="response-container font-nunito-sans font-semibold tracking-tighter text-sm text-gray-700">
+            <span class="response-container font-nunito-sans font-semibold tracking-tighter text-sm text-gray-800">
               {{ response }}
             </span>
             <span class="action-container flex flex-row pt-4">
               <action id="action" class="mr-2 border-green-600 hover:bg-green-50 text-green-700" action-type="Respond"/>
-              <action id="action" class="mr-2 border-indigo-300 hover:bg-indigo-100 text-indigo-500" action-type="Invite to answer"/>
+              <action id="action" class="mr-2 border-indigo-300 hover:bg-indigo-50 text-indigo-500" action-type="Invite to answer"/>
               <action id="action" class="mr-2 border-zinc400 hover:bg-zinc50 text-zinc700" action-type="Keep me posted"/>
             </span>
           </span>
