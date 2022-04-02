@@ -12,7 +12,7 @@
             {{ created_date }}
           </span>
         </div>
-        <div class="title pt-4 font-nunito-sans font-extrabold tracking-tighter text-xl text-gray-700">
+        <div class="title pt-2 font-nunito-sans font-extrabold tracking-tighter text-xl text-gray-700">
           {{ title }}
         </div>
         <div class="description w-14/16 pt-1 font-nunito-sans font-regular tracking-tighter text-sm text-gray-500">
