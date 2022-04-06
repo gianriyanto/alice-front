@@ -1,6 +1,6 @@
 <template>
   <div id="thread-detail" class="">
-    <div class="thread-wrapper flex flex-col h-98 pl-7 pt-7 w-full
+    <div class="thread-wrapper flex flex-col h-98 pl-7 pt-5 w-full
                 rounded-xl border bg-slate50 border-zinc400">
       <div class="header-container flex flex-col">
         <div class="top flex flex-row justify-between">
@@ -12,7 +12,7 @@
             {{ created_date }}
           </span>
         </div>
-        <div class="title pt-2 font-nunito-sans font-extrabold tracking-tighter text-xl text-gray-700">
+        <div class="title pt-3 font-nunito-sans font-extrabold tracking-tighter text-xl text-gray-700">
           {{ title }}
         </div>
         <div class="description w-14/16 pt-1 font-nunito-sans font-regular tracking-tighter text-sm text-gray-500">
@@ -39,7 +39,7 @@
               <tag id="tag" :tag="tag"></tag>
             </span>
           </span>
-          <span class="more pt-4 h-8 cursor-pointer">
+          <span class="more pt-3 h-8 cursor-pointer">
             <button class="font-nunito-sans font-bold tracking-tight text-sm text-blue-400">
               See more
             </button>
