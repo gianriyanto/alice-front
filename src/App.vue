@@ -2,9 +2,9 @@
   <div>
     <div id="app-wrapper" class="bg-slate50 flex flex-row w-screen">
       <div class="flex flex-col">
-        <side-bar id="side-bar" class="fixed top-0 h-screen flex-none w-24"/>
-        <Home id="Home" class="h-screen"/>
-        <Explore id="Explore" class="h-screen"/>
+        <side-bar id="side-bar" class="fixed top-0 h-screen flex-none w-24 z-20"/>
+        <Home id="Home" class="h-screen z-10"/>
+        <Explore id="Explore" class="h-screen z-10"/>
       </div>
     </div>
   </div>
@@ -32,4 +32,5 @@ import SideBar from "./components/SideBar.vue";
   height: 100vh;
   width: 100vw;
 }
+
 </style>
