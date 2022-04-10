@@ -1,6 +1,6 @@
 <template>
   <div id="create-thread" class="flex flex-row pt-4 pb-4 pl-4 pr-2">
-    <div class="create-thread-wrapper flex flex-col w-full h-auto pl-2 pr-4">
+    <div class="create-thread-wrapper flex flex-col w-full h-auto pl-2 pr-4 pt-2">
       <div class="header flex flex-col h-16">
         <h2 class="title text-lg text-gray-800 font-nunito-sans
                    font-extrabold tracking-tight">
@@ -53,7 +53,7 @@
                     class="bg-zinc100 bg-opacity-70 border border-zinc300 appearance-none rounded-sm w-full py-2 pl-2 pr-2
                     text-base font-nunito-sans text-gray-700 leading-tight
                            focus:outline-none focus:bg-white focus:border-purple-500"
-                    rows="4"/>
+                    rows="5"/>
         </span>
         <span class="tags-input flex flex-col w-6/16 mt-8">
           <label class="font-nunito-sans mb-2 text-xs font-bold text-gray-700">

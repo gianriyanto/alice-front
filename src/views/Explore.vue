@@ -1,15 +1,22 @@
 <template>
-  <body id="Explore" class="flex flex-row bg-slate-600">
+  <body id="Explore" class="flex flex-row bg-slate-600 w-full">
     <filter-bar id="filter-bar" class="w-3/16 z-0"/>
-    <feed id="feed" class="w-13/16 z-0"/>
-    <button @click="tog()" class="absolute z-10 right-8 w-8 h-14 font-bold"> New </button>
+    <feed id="feed" class="z-0 pt-10 w-12/16"/>
+    <span class="header-container pt-9">
+      <button @click="tog()"
+              class="absolute z-10 right-8 pl-6 pr-6 h-10 font-bold border
+                     rounded-md bg-blue-500 hover:bg-opacity-90 duration-300 ease-in-out
+                     font-nunito-sans font-bold tracking-normal text-sm text-zinc50">
+        Create
+      </button>
+    </span>
     <div id="drawer" :class="open ? 'navbar-open' : 'navbar-close'"
-         class="navbar absolute z-10 right-0 flex flex-col bg-slate100 h-screen w-5/16 border rounded shadow-xl">
-      <button @click="tog()" class="h-12 w-12">
-        <i class="ri-close-line" style="font-size: 28px; color: #323232"/>
+         class="navbar absolute z-10 right-0 flex flex-row h-screen">
+      <button @click="tog()" class="h-10 w-10 mt-4 mr-4 rounded-full bg-zinc100 shadow-md">
+        <i class="ri-close-line" style="font-size: 26px; color: #323232"/>
       </button>
       <div v-if="drawerType==='createThread'">
-        <create-thread id="create-thread" class="w-full overflow-x-scroll"/>
+        <create-thread id="create-thread" class="w-96 h-full overflow-x-scroll bg-neutral50 rounded shadow-xl border"/>
       </div>
     </div>
   </body>
