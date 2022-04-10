@@ -1,7 +1,7 @@
 <template>
   <div id="create-thread" class="flex flex-row pt-4 pb-4 pl-4 pr-2">
     <div class="create-thread-wrapper flex flex-col w-full h-auto pl-2 pr-4">
-      <div class="header flex flex-col h-12">
+      <div class="header flex flex-col h-16">
         <h2 class="title text-lg text-gray-800 font-nunito-sans
                    font-extrabold tracking-tight">
           Create Thread
@@ -68,10 +68,10 @@
                  value="Tags">
         </span>
       </form>
-      <span class="footer flex flex-row mt-24 h-10 justify-end">
+      <span class="footer flex flex-row mt-28 h-9 justify-end">
         <span id="cancel-button"
-              class="flex flex-col mr-2 pl-8 pr-8 pt-2 pb-2 justify-center
-                     border border-zinc300 bg-zinc100 rounded-md bg-opacity-70
+              class="flex flex-col mr-2 pl-6 pr-6 pt-2 pb-2 justify-center
+                     border border-zinc200 bg-zinc200 rounded-md bg-opacity-70
                      hover:bg-zinc200 hover:bg-opacity-70 duration-300 ease-in-out">
           <button class="font-nunito-sans font-bold text-gray-700 tracking-normal text-sm m-auto">
             Cancel
@@ -79,9 +79,9 @@
         </span>
         <span id="create-button"
               class="flex flex-col pl-8 pr-8 pt-2 pb-2 justify-center
-                     border rounded-md bg-green-500 bg-opacity-60
-                     hover:bg-opacity-80 duration-300 ease-in-out">
-          <button class="font-nunito-sans font-bold text-gray-700 tracking-normal text-sm m-auto">
+                     border rounded-md bg-blue-500
+                     hover:bg-opacity-90 duration-300 ease-in-out">
+          <button class="font-nunito-sans font-bold tracking-normal text-gray-100 text-sm m-auto">
             Create
           </button>
         </span>
