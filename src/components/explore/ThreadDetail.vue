@@ -28,7 +28,7 @@
             </span>
             <span class="action-container flex flex-row pt-4">
               <action id="action" class="mr-2 border-green-600 hover:bg-green-50 text-green-700" action-type="Respond"/>
-              <action id="action" class="mr-2 border-indigo-300 hover:bg-indigo-50 text-indigo-500" action-type="Invite to answer"/>
+              <action id="action" class="mr-2 border-indigo-400 hover:bg-indigo-50 text-indigo-500" action-type="Invite to answer"/>
               <action id="action" class="mr-2 border-zinc400 hover:bg-zinc50 text-zinc700" action-type="Keep me posted"/>
             </span>
           </span>
