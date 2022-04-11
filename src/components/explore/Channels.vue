@@ -5,6 +5,7 @@
       <span class="item bg-slate100 opacity-90 h-12 w-12 mt-4 rounded-lg border border-slate300 hover:opacity-100 duration-300 ease-in-out"/>
       <span class="item bg-green-200 opacity-60 h-12 w-12 mt-4 rounded-lg border border-green-300 shadow-lg hover:opacity-80 duration-300 ease-in-out"/>
       <span class="item bg-slate100 opacity-90 h-12 w-12 mt-4 rounded-lg border border-slate300 hover:opacity-100 duration-300 ease-in-out"/>
+      <span class="item bg-slate100 opacity-90 h-12 w-12 mt-4 rounded-lg border border-slate300 hover:opacity-100 duration-300 ease-in-out"/>
     </div>
   </div>
 </template>

@@ -108,6 +108,7 @@ module.exports = {
       },
       height: {
         '98': '25rem',
+        'thread-feed': '40rem',
       }
     },
   },

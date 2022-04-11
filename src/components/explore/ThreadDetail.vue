@@ -1,6 +1,6 @@
 <template>
   <div id="thread-detail" class="">
-    <div class="thread-wrapper flex flex-col h-98 pl-7 pt-5 w-full
+    <div class="thread-wrapper flex flex-col h-98 pl-7 pt-6 w-full
                 rounded-xl border bg-slate50 border-zinc300 shadow-md">
       <div class="header-container flex flex-col">
         <div class="top flex flex-row justify-between">
@@ -8,18 +8,18 @@
             <channel id="channel" class="mr-3" :channel="channel"/>
             <status id="status" class="" :status="status"/>
           </span>
-          <span class="date pr-6 font-nunito-sans font-regular tracking-tighter text-xs text-gray-500">
+          <span class="date pr-7 font-nunito-sans font-regular tracking-tighter text-xs text-gray-500">
             {{ created_date }}
           </span>
         </div>
-        <div class="title pt-3 font-nunito-sans font-extrabold tracking-tighter text-xl text-gray-700">
+        <div class="title pt-4 font-nunito-sans font-extrabold tracking-tighter text-xl text-gray-700">
           {{ title }}
         </div>
-        <div class="description w-14/16 pt-1 font-nunito-sans font-regular tracking-tighter text-sm text-gray-500">
+        <div class="description w-13/16 pt-1 font-nunito-sans font-regular tracking-tighter text-sm text-gray-500">
           {{ description }}
         </div>
       </div>
-      <div class="body-container flex flex-col w-full pt-3 w-15/16">
+      <div class="body-container flex flex-col w-full pt-4 w-15/16">
         <div class="flex flex-row">
           <span class="indent-bar w-5 h-full w-2 mr-4 bg-blue-400 opacity-80 rounded"/>
           <span class="response-container flex flex-col">
@@ -39,7 +39,7 @@
               <tag id="tag" :tag="tag"></tag>
             </span>
           </span>
-          <span class="more pt-3 h-8 cursor-pointer">
+          <span class="more pt-4 h-8 cursor-pointer">
             <button class="font-nunito-sans font-bold tracking-tight text-sm text-blue-400">
               See more
             </button>
