@@ -1,6 +1,6 @@
 <template>
-  <body id="Explore" class="flex flex-row bg-slate-600 w-full">
-    <filter-bar id="filter-bar" class="w-4/16 z-0"/>
+  <body id="Explore" class="flex flex-row bg-slate-600 w-full h-screen">
+    <filter-bar id="filter-bar" class="w-4/16 h-screen z-0 border border-red"/>
     <feed id="feed" class="z-0 pt-10 w-15/16"/>
     <span class="header-container pt-11">
       <button @click="tog()"
