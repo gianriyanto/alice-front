@@ -4,7 +4,7 @@
       <div class="flex flex-col">
         <side-bar id="side-bar" class="fixed top-0 h-screen flex-none w-24 z-20"/>
         <Home id="Home" class="h-screen z-10"/>
-        <Explore id="Explore" class="h-screen z-10"/>
+        <Explore id="Explore" class="h-screen z-20"/>
       </div>
     </div>
   </div>
