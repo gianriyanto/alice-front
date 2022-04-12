@@ -4,7 +4,7 @@
       <div class="header-container flex flex-col">
         <div class="greeting-container flex flex-row mt-28">
           <h1 class="greeting mr-2 font-roboto-slab text-4xl font-black tracking-tight text-slate800"> Hey </h1>
-          <img class="h-9 w-9 mr-2" src="../../assets/emoji-wave.png" alt="wave-emoji"/>
+          <img class="h-9 mr-2 mt-2" src="../../assets/emoji-wave.png" alt="wave-emoji"/>
           <h1 class="greeting mr-2 font-roboto-slab text-4xl font-extrabold tracking-tight text-slate800"> Edward! </h1>
         </div>
         <span class="message-container mt-2">

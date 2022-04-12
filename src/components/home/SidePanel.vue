@@ -5,8 +5,8 @@
         <span class="panel-tabs flex flex-row w-6/16"></span>
         <img class="user-profile w-10 h-10 rounded-full border" src="../../assets/my-portrait.png" alt="user-profile-photo"/>
       </div>
-      <div class="body-container flex-grow flex-col pt-14">
-        <Recent id="Recent" class="h-32"/>
+      <div class="body-container flex-grow flex-col pt-12">
+        <Recent id="Recent" class="h-28"/>
       </div>
     </div>
   </div>
