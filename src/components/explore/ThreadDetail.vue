@@ -70,7 +70,7 @@ export default {
       description: "Rolling the Persistence Model as the Domain Model seems severely off too due to Object Relational Impedence Missmatch.",
       response: "ORMs don't enable the creation of Rich Domain models, it simplifies the amount of (often repetitive) work. Making your domain model anemic with all business logic in services won't save you from boilerplate DTO mapping code.",
       tags: ["ORM", "Domain-driven-design", "Peewee", "Repository"],
-      status: "open",
+      status: "OPEN",
       channel: "#TECH"
     }
   }

@@ -1,7 +1,7 @@
 <template>
   <div id="feed" class="w-full">
-    <div class="content-wrapper full flex flex-col">
-      <search id="search" class="h-24 pl-12 pt-3 border-b shadow-sm"/>
+    <div class="content-wrapper full flex h-full flex-col">
+      <search id="search" class="h-24 pl-12 pt-3"/>
       <div class="content-wrapper h-full flex flex-row">
         <channels id="channels" class="w-1/18 pl-12 pt-16"/>
         <thread-results id="thread-results" class="w-7/16 pl-10 pr-5 h-thread-feed overflow-y-auto"/>

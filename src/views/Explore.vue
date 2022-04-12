@@ -2,9 +2,9 @@
   <body id="Explore" class="flex flex-row bg-slate-600 w-full">
     <filter-bar id="filter-bar" class="w-4/16 z-0"/>
     <feed id="feed" class="z-0 pt-10 w-15/16"/>
-    <span class="header-container pt-9">
+    <span class="header-container pt-11">
       <button @click="tog()"
-              class="absolute z-10 right-8 pl-6 pr-6 h-10 font-bold border
+              class="absolute z-10 right-8 pl-8 pr-8 h-10 font-bold border
                      rounded-md bg-blue-500 hover:bg-opacity-90 duration-300 ease-in-out
                      font-nunito-sans font-bold tracking-normal text-sm text-zinc50">
         Create
