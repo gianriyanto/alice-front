@@ -1,45 +1,15 @@
 <template>
   <div id="thread-results" class="">
     <div class="thread-container flex flex-col">
-      <preview-card id="preview-card" class="text-gray-700 border border-zinc300 bg-gray-50"
-                    title="Test vs Behavior Driven Design."
-                    created-timestamp="Today"
-                    body="Lorem ipsum dolor sit amet, consectetur tempor elit adipiscing elit, sed do ipsum dolor sit amet"/>
-      <preview-card id="preview-card"
-                    class="text-gray-700 border bg-gray-50 border-zinc400"
-                    title="Anaemic domain models and ORMs?"
-                    created-timestamp="Yesterday"
-                    body="Lorem ipsum dolor sit amet, eiusmoda dipiscing elit, sed do eiusmod tempor incididunt eiusmod"/>
-      <preview-card id="preview-card"
-                    class="text-gray-700 border border-zinc300 bg-gray-50"
-                    title="Why can't I connect to VPN?"
-                    created-timestamp="10 Oct"
-                    body="Lorem ipsum dolor sit consectetur amet, eiusmod dolor elit, sed do eiusmod dolor tempor incididunt"/>
-<!--      <preview-card id="preview-card"-->
-<!--                    class="text-gray-700 border border-zinc300 bg-gray-50"-->
-<!--                    title="Thoughts on an anti-corruption layer."-->
-<!--                    created-timestamp="Yesterday"-->
-<!--                    body="Adipiscing elit, sed tempor incididunt exercitation aliquip ex ea commodo consequat."/>-->
-<!--      <preview-card id="preview-card"-->
-<!--                    class="text-gray-700 border border-zinc300 bg-gray-50"-->
-<!--                    title="What is a bounded context?"-->
-<!--                    created-timestamp="Yesterday"-->
-<!--                    body="Adipiscing elit, sed tempor incididunt exercitation aliquip ex ea commodo consequat."/>-->
-<!--      <preview-card id="preview-card"-->
-<!--                    class="text-gray-700 border border-zinc300 bg-gray-50"-->
-<!--                    title="What's the best way to whiteboard?"-->
-<!--                    created-timestamp="Yesterday"-->
-<!--                    body="Adipiscing elit, sed tempor incididunt exercitation aliquip ex ea commodo consequat."/>-->
-      <preview-card id="preview-card"
-                    class="text-gray-700 border border-zinc300 bg-gray-50"
-                    title="What is the repository pattern?"
-                    created-timestamp="10 Oct"
-                    body="Lorem ipsum dolor sit consectetur amet, eiusmod dolor elit, sed do eiusmod dolor tempor incididunt"/>
-      <preview-card id="preview-card"
-                    class="text-gray-700 border border-zinc300 bg-gray-50"
-                    title="How can I apply for Annual leave?"
-                    created-timestamp="Yesterday"
-                    body="Adipiscing elit, sed tempor incididunt exercitation aliquip ex ea commodo consequat."/>
+      <div v-for="thread in threadResults">
+        <preview-card
+            id="preview-card"
+            class="text-gray-700 border border-zinc300 bg-gray-50"
+            :title="thread.title"
+            :created-timestamp="reformatDate(thread.created_date)"
+            :body="thread.description"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -47,12 +17,28 @@
 <script>
 import PreviewCard from "../PreviewCard.vue";
 import axios from "axios";
+import util from "../../util";
+
 export default {
   name: "ThreadResults",
   components: {PreviewCard},
   data() {
     return {
-      threadResults: []
+      threadResults: [],
+      monthMapping: {
+        "01": "Jan",
+        "02": "Feb",
+        "03": "Mar",
+        "04": "Apr",
+        "05": "May",
+        "06": "Jun",
+        "07": "Jul",
+        "08": "Aug",
+        "09": "Sep",
+        "10": "Oct",
+        "11": "Nov",
+        "12": "Dec"
+      }
     }
   },
   mounted() {
@@ -68,6 +54,9 @@ export default {
         .catch((error) => {
           console.log("Error fetching threads")
       })
+    },
+    reformatDate(datetime) {
+      return util.datetimeToShortDateString(datetime)
     }
   }
 }
