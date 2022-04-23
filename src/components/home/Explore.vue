@@ -5,20 +5,45 @@
         Explore
       </h3>
       <div class="explore-tags h-14/16 mt-0 flex flex-wrap">
-        <span class="tag bg-blue-400 opacity-50 h-4 w-24 mr-2 mt-4 rounded-md hover:opacity-30 duration-300 ease-in-out cursor-pointer"/>
-        <span class="tag bg-green-200 opacity-60 h-4 w-28 mr-2 mt-4 rounded-md hover:opacity-40 duration-300 ease-in-out cursor-pointer"/>
-        <span class="tag bg-slate300 opacity-70 h-4 w-28 mr-2 mt-4 rounded-md hover:opacity-50 duration-300 ease-in-out cursor-pointer"/>
-        <span class="tag bg-slate300 opacity-60 h-4 w-32 mr-2 mt-4 rounded-md hover:opacity-40 duration-300 ease-in-out cursor-pointer"/>
-        <span class="tag bg-blue-300 opacity-60 h-4 w-16 mr-2 mt-4 rounded-md hover:opacity-50 duration-300 ease-in-out cursor-pointer"/>
-        <span class="tag bg-yellow-400 opacity-30 h-4 w-20 mr-2 mt-4 rounded-md hover:opacity-20 duration-300 ease-in-out cursor-pointer"/>
+        <div v-for="tag in tags.slice(0, 7)">
+          <explore-tag-chip class="tag" :tagName="tag"/>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import axios from "axios";
+import util from "../../util";
+import ExploreTagChip from "./TagChip.vue";
+
 export default {
-  name: "Explore"
+  name: "Explore",
+  components: {ExploreTagChip},
+  data() {
+    return {
+      tags: []
+    }
+  },
+  mounted() {
+    this.getTags()
+  },
+  methods: {
+    getTags() {
+      axios
+        .get(`${import.meta.env.VITE_BASE_URL}/api/tags`)
+        .then((response) => {
+          this.tags = response.data
+        })
+        .catch((error) => {
+          console.log("Error fetching threads")
+      })
+    },
+    reformatDate(datetime) {
+      return util.datetimeToShortDateString(datetime)
+    }
+  }
 }
 </script>
 
