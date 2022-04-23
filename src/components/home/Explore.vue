@@ -8,6 +8,7 @@
         <div v-for="tag in tags.slice(0, 7)">
           <explore-tag-chip class="tag" :tagName="tag"/>
         </div>
+        <explore-tag-chip class="tag bg-yellow-300" tagName="more"/>
       </div>
     </div>
   </div>
