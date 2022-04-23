@@ -91,8 +91,15 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
-  name: "CreateThread"
+  name: "CreateThread",
+  methods: {
+    // createThread() {
+    //
+    // }
+  }
 }
 </script>
 

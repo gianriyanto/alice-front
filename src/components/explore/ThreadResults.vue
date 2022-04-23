@@ -46,9 +46,30 @@
 
 <script>
 import PreviewCard from "../PreviewCard.vue";
+import axios from "axios";
 export default {
   name: "ThreadResults",
-  components: {PreviewCard}
+  components: {PreviewCard},
+  data() {
+    return {
+      threadResults: []
+    }
+  },
+  mounted() {
+    this.getThreads()
+  },
+  methods: {
+    getThreads() {
+      axios
+        .get(`${import.meta.env.VITE_BASE_URL}/api/threads`)
+        .then((response) => {
+          this.threadResults = response.data
+        })
+        .catch((error) => {
+          console.log("Error fetching threads")
+      })
+    }
+  }
 }
 </script>
 
