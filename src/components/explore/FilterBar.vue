@@ -40,32 +40,36 @@
             </label>
           </div>
         </div>
-        <div id="status-selection" class="mt-8 w-full">
+        <div id="status-selection" class="mt-7">
           <label class="font-nunito-sans mb-2 text-sm font-bold text-gray-700">
               Status
           </label>
-          <div class="status-selection flex flex-row pt-2">
-            <span class="status-chip flex w-5/16 h-9 pl-3 pr-3 border border-gray-300 rounded-l-md
-                         hover:bg-blue-100 hover:border-blue-500 hover:opacity-80 duration-200 ease-in-out cursor-pointer">
-              <span class="font-nunito-sans font-bold tracking-normal text-xs text-gray-500 m-auto">
-                Open
-              </span>
-            </span>
-            <span class="status-chip flex w-5/16 h-9 pl-3 pr-3 border-t border-b border-l border-r border-gray-300
-                         hover:bg-indigo-100 hover:border-indigo-500 hover:opacity-80 hover:border-l duration-200 ease-in-out cursor-pointer">
-              <span class="font-nunito-sans font-bold tracking-normal text-xs text-gray-500 m-auto">
-                Closed
-              </span>
-            </span>
-            <span class="status-chip flex w-5/16 h-9 pl-3 pr-3 border border-gray-300 rounded-r-md
-                         hover:bg-green-100 hover:border-green-500 hover:opacity-80 duration-200 ease-in-out cursor-pointer">
-              <span class="font-nunito-sans font-bold tracking-normal text-xs text-gray-500 m-auto">
-                Verified
-              </span>
-            </span>
+          <div class="form-check mt-1">
+            <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label inline-block text-gray-600
+                          font-nunito-sans font-semibold tracking-normal text-sm"
+                   for="flexCheckDefault">
+              Open
+            </label>
+          </div>
+          <div class="form-check mt-1">
+            <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label inline-block text-gray-600
+                          font-nunito-sans font-semibold tracking-normal text-sm"
+                   for="flexCheckDefault">
+              Closed
+            </label>
+          </div>
+          <div class="form-check mt-1">
+            <input class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label inline-block text-gray-600
+                          font-nunito-sans font-semibold tracking-normal text-sm"
+                   for="flexCheckDefault">
+              Verified
+            </label>
           </div>
         </div>
-        <div id="channel-selection" class="mt-8">
+        <div id="channel-selection" class="mt-7">
           <label class="font-nunito-sans mb-2 text-sm font-bold text-gray-700">
               Channel
           </label>
@@ -75,7 +79,7 @@
             </span>
           </div>
         </div>
-        <div id="tag-selection" class="mt-8">
+        <div id="tag-selection" class="mt-7">
           <label class="font-nunito-sans mb-2 text-sm font-bold text-gray-700">
               Tags
           </label>
@@ -86,7 +90,7 @@
           </div>
         </div>
       </div>
-      <div id="footer" class="flex flex-col h-24 justify-end">
+      <div id="footer" class="flex flex-col h-20 justify-end">
         <span id="create-button"
               class="flex flex-col pl-8 pr-8 pt-2 pb-2 justify-center
                      border rounded-md bg-blue-500
@@ -115,7 +119,7 @@ export default {
 		return {
       statuses: ["Open", "Verified", "Closed"],
       channels: ["Tech", "HR", "Admin", "Platform", "+"],
-      tags: ["Peewee", "ORM", "Git", "Database", "Config", "Cloud", "AWS", "Testing", "+"]
+      tags: ["Peewee", "ORM", "Git", "Database", "Config", "Cloud", "Testing", "+"]
     }
   }
 }

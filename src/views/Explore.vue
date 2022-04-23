@@ -12,8 +12,8 @@
     </span>
     <div id="drawer" :class="open ? 'navbar-open' : 'navbar-close'"
          class="navbar absolute z-10 right-0 flex flex-row h-screen">
-      <button @click="tog()" class="h-10 w-10 mt-4 mr-4 rounded-full bg-zinc100 shadow-md">
-        <i class="ri-close-line" style="font-size: 26px; color: #323232"/>
+      <button @click="tog()" class="h-10 w-10 mt-8 mr-4 rounded-full bg-neutral300 shadow-md">
+        <i class="ri-close-line" style="font-size: 23px; color: #323232"/>
       </button>
       <div v-if="drawerType==='createThread'">
         <create-thread id="create-thread" class="w-96 h-full overflow-x-scroll bg-neutral50 rounded shadow-xl border"/>

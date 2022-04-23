@@ -1,5 +1,5 @@
 <template>
-  <div id="create-thread" class="flex flex-row pt-4 pb-4 pl-4 pr-2">
+  <div id="create-thread" class="flex flex-row pt-8 pb-4 pl-4 pr-2">
     <div class="create-thread-wrapper flex flex-col w-full h-auto pl-2 pr-4 pt-2">
       <div class="header flex flex-col h-16">
         <h2 class="title text-lg text-gray-800 font-nunito-sans
