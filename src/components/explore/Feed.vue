@@ -4,7 +4,7 @@
       <search id="search" class="h-24 pl-12 pt-3"/>
       <div class="content-wrapper h-full flex flex-row">
         <channels id="channels" class="w-1/18 pl-12 pt-16"/>
-        <thread-results id="thread-results" class="w-7/16 pl-10 pr-5 h-thread-feed overflow-y-auto"/>
+        <thread-results id="thread-results" class="w-7/16 pl-10 pr-5 h-thread-feed overflow-y-auto hide-scrollbar"/>
         <thread-detail id="thread-detail" class="w-8/16 pl-7 pr-10 pt-48"/>
       </div>
     </div>
@@ -24,5 +24,15 @@ export default {
 </script>
 
 <style scoped>
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
 </style>
