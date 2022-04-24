@@ -12,7 +12,7 @@
       <div class="card-body flex flex-row w-13/16 pt-1">
         <span class="indent-bar w-2 h-full w-2 mr-3 bg-green-400 opacity-40"/>
         <span class="body-content font-nunito-sans font-light tracking-tighter text-sm text-zinc600">
-          {{ body }}
+          {{ shorten(body) }}
         </span>
       </div>
     </div>
@@ -24,7 +24,18 @@ export default {
   name: "previewCard",
   props: [
     "title", "body", "createdTimestamp"
-  ]
+  ],
+  methods: {
+    shorten(body) {
+      const shortBody = body.substring(0, 90)
+      if (body === shortBody) {
+        return body
+      }
+      else {
+        return `${shortBody} ...`
+      }
+    }
+  }
 }
 </script>
 
