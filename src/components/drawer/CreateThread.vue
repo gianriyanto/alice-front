@@ -16,7 +16,8 @@
           <select class="block appearance-none w-full bg-zinc200 bg-opacity-60 border rounded-sm
                          border-zinc200 hover:border-zinc300 hover:bg-opacity-80 py-2 pl-2 pr-2
                          font-nunito-sans text-sm text-gray-600 leading-tight
-                         rounded leading-tight focus:outline-none focus:shadow-outline">
+                         rounded leading-tight focus:outline-none focus:shadow-outline"
+                  v-model="channel">
             <option>platform</option>
             <option>consumer-squad</option>
             <option>quality-assurance</option>
@@ -30,7 +31,8 @@
             <select class="block appearance-none w-full bg-zinc200 bg-opacity-60 border rounded-sm
                            border-zinc200 hover:border-zinc300 hover:bg-opacity-80 py-2 pl-2 pr-2
                            font-nunito-sans text-sm text-gray-600 leading-tight
-                           rounded leading-tight focus:outline-none focus:shadow-outline">
+                           rounded leading-tight focus:outline-none focus:shadow-outline"
+                    v-model="type">
               <option>Question</option>
               <option>Docs</option>
               <option>Share</option>
@@ -45,17 +47,19 @@
                         font-nunito-sans font-medium text-sm text-gray-800 tracking-tight leading-tight
                         focus:outline-none focus:bg-white focus:border-purple-500"
                  type="text"
-                 value="">
+                 v-model="title"
+                 >
         </span>
         <span class="description-input flex flex-col w-16/16 mt-4">
           <label class="font-nunito-sans mb-2 text-xs font-bold text-gray-700">
             Description
           </label>
-          <textarea id="inline-description"
-                    class="bg-zinc100 bg-opacity-70 border border-zinc300 appearance-none rounded-sm w-full py-2 pl-2 pr-2
-                    text-base font-nunito-sans text-gray-700 leading-tight
-                           focus:outline-none focus:bg-white focus:border-purple-500"
-                    rows="5"/>
+          <textarea
+            id="inline-description"
+            class="bg-zinc100 bg-opacity-70 border border-zinc300 appearance-none rounded-sm w-full py-2 pl-2 pr-2
+            text-base font-nunito-sans text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500"
+            rows="5"
+            v-model="description"/>
         </span>
         <span class="tags-input flex flex-col w-6/16 mt-8">
           <label class="font-nunito-sans mb-2 text-xs font-bold text-gray-700">
@@ -66,8 +70,7 @@
                         border-zinc200 hover:border-zinc300 hover:bg-opacity-80 py-2 pl-2 pr-2
                         font-nunito-sans text-sm text-gray-700
                         rounded leading-tight focus:outline-none focus:shadow-outline"
-                 type="text"
-                 value="Tags">
+                 type="text">
         </span>
       </form>
       </div>
@@ -84,7 +87,7 @@
               class="flex flex-col pl-8 pr-8 pt-2 pb-2 justify-center
                      border rounded-md bg-blue-500
                      hover:bg-opacity-90 duration-300 ease-in-out">
-          <button class="font-nunito-sans font-bold tracking-normal text-gray-100 text-sm m-auto">
+          <button v-on:click="createThread" class="font-nunito-sans font-bold tracking-normal text-gray-100 text-sm m-auto">
             Create
           </button>
         </span>
@@ -98,10 +101,39 @@ import axios from 'axios'
 
 export default {
   name: "CreateThread",
+  data() {
+    return {
+      title: "Test title",
+      description: "",
+      tags: [""], // TODO: Dynamically append new tags to tag list
+      channel: "test-channel"
+    }
+  },
   methods: {
-    // createThread() {
-    //
-    // }
+    createThread() {
+      console.log(this.description)
+      axios.post(`${import.meta.env.VITE_BASE_URL}/api/thread`, {
+        title: this.title,
+        "description": this.description,
+        "status": "open",
+        "created_by": {
+          // hard-coded for now
+          "_id": "8311314c47c738b032cfd354",
+          "first_name": "Dave",
+          "last_name": "Smith",
+          "email": "dsmith@example.com"
+        },
+        "looks": [],
+        "plus_ones": [],
+        "tags": this.tags,
+        "channel": this.channel,
+        "responses": {}
+      }).then((response) => {
+        console.log(response.data)
+      }).catch((error) => {
+        console.log("Error creating thread")
+      })
+    }
   }
 }
 </script>

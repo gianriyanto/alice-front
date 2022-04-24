@@ -1,7 +1,7 @@
 <template>
   <div id="explore">
     <div class="explore-container flex-column">
-      <h3 class="header h-2/16 font-nunito-sans text-xl font-bold tracking-tighter text-slate800">
+      <h3 class="header h-2/16 font-nunito-sans text-lg font-bold tracking-tighter text-slate800">
         Explore
       </h3>
       <div class="explore-tags h-14/16 mt-0 flex flex-wrap">
