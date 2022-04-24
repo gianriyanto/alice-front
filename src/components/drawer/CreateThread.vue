@@ -103,10 +103,10 @@ export default {
   name: "CreateThread",
   data() {
     return {
-      title: "Test title",
+      title: "",
       description: "",
-      tags: [""], // TODO: Dynamically append new tags to tag list
-      channel: "test-channel" // TODO: dynamically fetch all channels as option select
+      tags: [], // TODO: Dynamically append new tags to tag list
+      channel: "" // TODO: dynamically fetch all channels as option select
     }
   },
   methods: {
