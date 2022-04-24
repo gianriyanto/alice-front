@@ -5,7 +5,7 @@
         Explore
       </h3>
       <div class="explore-tags h-14/16 mt-0 flex flex-wrap">
-        <div v-for="tag in tags.slice(0, 7)">
+        <div v-for="tag in tags.slice(0, 6)">
           <explore-tag-chip class="tag" :tagName="tag"/>
         </div>
         <explore-tag-chip class="tag bg-yellow-300" tagName="more"/>

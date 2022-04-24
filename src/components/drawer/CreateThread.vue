@@ -1,13 +1,14 @@
 <template>
   <div id="create-thread" class="flex flex-row pt-8 pb-4 pl-4 pr-2">
-    <div class="create-thread-wrapper flex flex-col w-full h-auto pl-2 pr-4 pt-2">
-      <div class="header flex flex-col h-16">
+    <div class="create-thread-wrapper flex flex-col justify-between w-full h-auto pl-2 pr-4 pt-2">
+      <div class="flex flex-col">
+        <div class="header flex flex-col h-16">
         <h2 class="title text-lg text-gray-800 font-nunito-sans
                    font-extrabold tracking-tight">
           Create Thread
         </h2>
       </div>
-      <form class="create-form flex flex-col">
+        <form class="create-form flex flex-col">
         <span class="channel-input flex flex-col w-10/16">
           <label class="font-nunito-sans mb-2 text-xs font-bold text-gray-700">
             Channel
@@ -16,9 +17,10 @@
                          border-zinc200 hover:border-zinc300 hover:bg-opacity-80 py-2 pl-2 pr-2
                          font-nunito-sans text-sm text-gray-600 leading-tight
                          rounded leading-tight focus:outline-none focus:shadow-outline">
-            <option>Platform</option>
-            <option>Tech</option>
-            <option>HR</option>
+            <option>platform</option>
+            <option>consumer-squad</option>
+            <option>quality-assurance</option>
+            <option>help-desk</option>
           </select>
         </span>
         <span class="type-input flex flex-col w-10/16 mt-4">
@@ -68,6 +70,7 @@
                  value="Tags">
         </span>
       </form>
+      </div>
       <span class="footer flex flex-row mt-28 h-9 justify-end">
         <span id="cancel-button"
               class="flex flex-col mr-2 pl-6 pr-6 pt-2 pb-2 justify-center
