@@ -5,7 +5,8 @@
         <span class="header font-nunito-sans text-lg font-extrabold tracking-tight text-gray-800">
           Recent
         </span>
-        <button class="see-all-btn font-nunito-sans text-bluegray font-semibold tracking-tight text-sm mr-2">
+        <button class="see-all-btn font-nunito-sans text-bluegray font-semibold tracking-tight text-sm mr-2
+                       hover:text-blue-400 duration-300 ease-in-out">
           See all
         </button>
       </div>

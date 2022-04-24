@@ -3,11 +3,11 @@
     <div class="thread-container flex flex-col">
       <div v-for="thread in threadResults">
         <preview-card
-            id="preview-card"
-            class="text-gray-700 border border-zinc300 bg-gray-50"
-            :title="thread.title"
-            :created-timestamp="reformatDate(thread.created_date)"
-            :body="thread.description"
+          id="preview-card"
+          class="text-gray-700 border border-zinc300 bg-gray-50"
+          :title="thread.title"
+          :created-timestamp="reformatDate(thread.created_date)"
+          :body="thread.description"
         />
       </div>
     </div>
