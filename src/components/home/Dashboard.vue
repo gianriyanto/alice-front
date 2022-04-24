@@ -1,7 +1,7 @@
 <template>
   <div id="dashboard" class="flex flex-row justify-center">
     <div class="content-wrapper h-full h-24 pl-24 w-10/16 flex flex-col">
-      <div class="header-container flex flex-col w-11/16">
+      <div class="header-container flex flex-col w-13/16">
         <div class="greeting-container flex flex-row mt-28">
           <h1 class="greeting mr-2 font-roboto-slab text-4xl font-black tracking-tight text-slate800"> Hey </h1>
           <img class="h-9 mr-2 mt-2" src="../../assets/emoji-wave.png" alt="wave-emoji"/>
