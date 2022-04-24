@@ -12,19 +12,19 @@
         </span>
       </div>
       <search id="search" class="h-8 w-full mt-12"/>
-      <Trending id="trending" class="h-7/16 w-14/16 mt-14 w-96"/>
+      <channels id="channels" class="h-7/16 w-14/16 mt-14 w-96"/>
       <Explore id="explore" class="h-7/16 mt-20"/>
     </div>
   </div>
 </template>
 
 <script>
-import Trending from "./Trending.vue";
 import Explore from "./Explore.vue";
 import Search from "./Search.vue";
+import Channels from "./Channels.vue";
 export default {
   name: "Dashboard",
-  components: {Search, Explore, Trending}
+  components: {Channels, Search, Explore}
 }
 </script>
 
