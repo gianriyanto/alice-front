@@ -106,7 +106,7 @@ export default {
       title: "Test title",
       description: "",
       tags: [""], // TODO: Dynamically append new tags to tag list
-      channel: "test-channel"
+      channel: "test-channel" // TODO: dynamically fetch all channels as option select
     }
   },
   methods: {
@@ -128,11 +128,20 @@ export default {
         "tags": this.tags,
         "channel": this.channel,
         "responses": {}
-      }).then((response) => {
-        console.log(response.data)
-      }).catch((error) => {
+      }).then(() => {
+        this.handleCreated()
+      }).catch(() => {
+        this.handleFailed()
         console.log("Error creating thread")
       })
+    },
+    handleCreated() {
+      // TODO: clear form inputs and close sidebar
+      return true
+    },
+    handleFailed() {
+      // TODO: display error prompt
+      return true
     }
   }
 }
