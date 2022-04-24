@@ -4,22 +4,22 @@
                 rounded-xl border bg-slate50 border-zinc300 shadow-md">
       <div class="header-container flex flex-col">
         <div class="top flex flex-row justify-between">
-          <span class="flex flex-row">
-            <channel id="channel" class="mr-3" :channel="channel"/>
+          <span class="flex flex-row items-center">
+            <channel id="channel" class="mr-2" :channel="channel"/>
             <status id="status" class="" :status="status"/>
           </span>
           <span class="date pr-7 font-nunito-sans font-regular tracking-tighter text-xs text-gray-500">
             {{ created_date }}
           </span>
         </div>
-        <div class="title pt-4 font-nunito-sans font-extrabold tracking-tighter text-xl text-gray-700">
+        <div class="title pt-1 font-nunito-sans font-extrabold tracking-tighter text-xl text-gray-700">
           {{ title }}
         </div>
         <div class="description w-13/16 pt-1 font-nunito-sans font-regular tracking-tighter text-sm text-gray-500">
           {{ description }}
         </div>
       </div>
-      <div class="body-container flex flex-col w-full pt-4 w-15/16">
+      <div class="body-container flex flex-col w-full pt-2 w-15/16">
         <div class="flex flex-row">
           <span class="indent-bar w-5 h-full w-2 mr-4 bg-blue-400 opacity-80 rounded"/>
           <span class="response-container flex flex-col">
