@@ -18,17 +18,19 @@
             </div>
           </div>
         </div>
-        <thread-detail
-          id="thread-detail"
-          class="w-8/16 pl-7 pr-10 pt-48"
-          :createdDate="created_date"
-          :title="title"
-          :description="description"
-          :response="response"
-          :tags="tags"
-          :status="status"
-          :channel="channel"
-        />
+        <div v-if="threadDetail !== {}" class="w-9/16">
+          <thread-detail
+            id="thread-detail"
+            class="pl-7 pr-10 pt-48"
+            :createdDate="reformatDate(threadDetail.created_date)"
+            :title="threadDetail.title"
+            :description="threadDetail.description"
+            :response="getFirstResponse(threadDetail.responses)"
+            :tags="threadDetail.tags"
+            :status="threadDetail.status"
+            :channel="format(threadDetail.channel)"
+          />
+        </div>
       </div>
     </div>
   </div>
@@ -49,20 +51,32 @@ export default {
     return {
       threadResults: [],
       threadDetail: {},
+
       created_date: "Yesterday",
       title: "Anaemic domain models and ORMs?",
       description: "Rolling the Persistence Model as the Domain Model seems severely off too due to Object Relational Impedence Missmatch.",
-      response: "ORMs don't enable the creation of Rich Domain models, it simplifies the amount of (often repetitive) work. Making you" +
+      response: "Object Relational Mappings (ORMs) don't enable the creation of Rich Domain models, it simplifies the amount of (often repetitive) work. Making you" +
           "r domain model anemic with all business logic in services won't save you from boilerplate DTO mapping code.",
       tags: ["ORM", "Domain-driven-design", "Peewee", "Repository"],
       status: "OPEN",
       channel: "#TECH"
     }
   },
-  mounted() {
-    this.getThreads()
+  async mounted() {
+    await this.getThreads()
   },
   methods: {
+    getFirstResponse(responses) {
+      // TODO: Handle undefined, Wait until data is available
+      if (responses === undefined) {
+        return false
+      }
+      // TODO: should display verified response in the ThreadDetail component
+      // current implementation is a hack to just display a response
+      // const responses_json = JSON.parse(JSON.stringify(responses))
+      // console.log(responses)
+      return responses[0].body
+    },
     getThreadDetail(thread_id) {
       axios
         .get(`${import.meta.env.VITE_BASE_URL}/api/thread/${thread_id}`)
@@ -84,7 +98,18 @@ export default {
       })
     },
     reformatDate(datetime) {
+      // TODO: Handle undefined, Wait until data is available
+      if (datetime === undefined) {
+        return false
+      }
       return util.datetimeToShortDateString(datetime)
+    },
+    format(channel) {
+      // TODO: Handle undefined, Wait until data is available
+      if (channel === undefined) {
+        return false
+      }
+      return `#${channel.toUpperCase().slice(0,4)}`
     }
   }
 }

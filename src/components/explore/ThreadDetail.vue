@@ -1,11 +1,11 @@
 <template>
   <div id="thread-detail" class="">
-    <div class="thread-wrapper flex flex-col h-98 pl-7 pt-6 w-full
+    <div class="flex flex-col h-98 pl-7 pt-6 w-full
                 rounded-xl border bg-slate50 border-zinc300 shadow-md">
       <div class="header-container flex flex-col">
         <div class="top flex flex-row justify-between">
           <span class="flex flex-row items-center">
-            <channel id="channel" class="mr-2" :channel="channel"/>
+            <channel id="channel" class="mr-3" :channel="channel"/>
             <status id="status" class="" :status="status"/>
           </span>
           <span class="date pr-7 font-nunito-sans font-regular tracking-tighter text-xs text-gray-500">
