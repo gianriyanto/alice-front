@@ -18,19 +18,25 @@
             </div>
           </div>
         </div>
-        <div v-if="threadDetail !== {}" class="w-9/16">
-          <thread-detail
-            id="thread-detail"
-            class="pl-7 pr-10 pt-48"
-            :createdDate="reformatDate(threadDetail.created_date)"
-            :title="threadDetail.title"
-            :description="threadDetail.description"
-            :response="getFirstResponse(threadDetail.responses)"
-            :tags="threadDetail.tags"
-            :status="threadDetail.status"
-            :channel="format(threadDetail.channel)"
-          />
+        <div id="thread-detail-container" class="w-8/16">
+          <div v-if="threadDetail._id === undefined" class="flex h-98">
+            <!-- TODO: Add empty state-->
+          </div>
+          <div v-else>
+            <thread-detail
+              id="thread-detail"
+              class="pl-7 pr-10 pt-48"
+              :createdDate="reformatDate(threadDetail.created_date)"
+              :title="threadDetail.title"
+              :description="threadDetail.description"
+              :response="getFirstResponse(threadDetail.responses)"
+              :tags="threadDetail.tags"
+              :status="threadDetail.status"
+              :channel="format(threadDetail.channel)"
+            />
+          </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -51,19 +57,12 @@ export default {
     return {
       threadResults: [],
       threadDetail: {},
-
-      created_date: "Yesterday",
-      title: "Anaemic domain models and ORMs?",
-      description: "Rolling the Persistence Model as the Domain Model seems severely off too due to Object Relational Impedence Missmatch.",
-      response: "Object Relational Mappings (ORMs) don't enable the creation of Rich Domain models, it simplifies the amount of (often repetitive) work. Making you" +
-          "r domain model anemic with all business logic in services won't save you from boilerplate DTO mapping code.",
-      tags: ["ORM", "Domain-driven-design", "Peewee", "Repository"],
-      status: "OPEN",
-      channel: "#TECH"
     }
   },
   async mounted() {
+    console.log(this.threadDetail._id)
     await this.getThreads()
+    console.log(this.threadDetail)
   },
   methods: {
     getFirstResponse(responses) {
@@ -73,8 +72,6 @@ export default {
       }
       // TODO: should display verified response in the ThreadDetail component
       // current implementation is a hack to just display a response
-      // const responses_json = JSON.parse(JSON.stringify(responses))
-      // console.log(responses)
       return responses[0].body
     },
     getThreadDetail(thread_id) {
@@ -82,7 +79,7 @@ export default {
         .get(`${import.meta.env.VITE_BASE_URL}/api/thread/${thread_id}`)
         .then((response) => {
           this.threadDetail = response.data
-        })
+           })
         .catch((error) => {
           console.log(`Error fetching thread ${thread_id}`)
         })
