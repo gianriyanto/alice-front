@@ -13,8 +13,8 @@
           <label class="font-nunito-sans mb-2 text-xs font-bold text-gray-700">
             Channel
           </label>
-          <select class="block appearance-none w-full bg-zinc200 bg-opacity-60 border rounded-sm
-                         border-zinc200 hover:border-zinc300 hover:bg-opacity-80 py-2 pl-2 pr-2
+          <select class="block appearance-none w-full bg-zinc100 bg-opacity-60 border rounded-sm
+                         border-zinc300 hover:border-zinc300 hover:bg-opacity-80 py-2 pl-2 pr-2
                          font-nunito-sans text-sm text-gray-600 leading-tight
                          rounded leading-tight focus:outline-none focus:shadow-outline"
                   v-model="channel">
@@ -28,8 +28,8 @@
           <label class="font-nunito-sans mb-2 text-xs font-bold text-gray-700">
             Type
           </label>
-            <select class="block appearance-none w-full bg-zinc200 bg-opacity-60 border rounded-sm
-                           border-zinc200 hover:border-zinc300 hover:bg-opacity-80 py-2 pl-2 pr-2
+            <select class="block appearance-none w-full bg-zinc100 bg-opacity-60 border rounded-sm
+                           border-zinc300 hover:border-zinc300 hover:bg-opacity-80 py-2 pl-2 pr-2
                            font-nunito-sans text-sm text-gray-600 leading-tight
                            rounded leading-tight focus:outline-none focus:shadow-outline"
                     v-model="type">
@@ -43,7 +43,7 @@
             Summary
           </label>
           <input id="inline-summary"
-                 class="bg-zinc100 bg-opacity-70 border border-zinc300 appearance-none rounded-sm w-full py-2 pl-2 pr-2
+                 class="bg-zinc100 border border-zinc300 appearance-none rounded-sm w-full py-2 pl-2 pr-2
                         font-nunito-sans font-medium text-sm text-gray-800 tracking-tight leading-tight
                         focus:outline-none focus:bg-white focus:border-purple-500"
                  type="text"
@@ -66,8 +66,8 @@
             Tags
           </label>
           <input id="inline-tags"
-                 class="block appearance-none w-full bg-zinc200 bg-opacity-60 border rounded-sm
-                        border-zinc200 hover:border-zinc300 hover:bg-opacity-80 py-2 pl-2 pr-2
+                 class="block appearance-none w-full bg-zinc100 bg-opacity-60 border rounded-sm
+                        border-zinc300 hover:border-zinc300 hover:bg-opacity-80 py-2 pl-2 pr-2
                         font-nunito-sans text-sm text-gray-700
                         rounded leading-tight focus:outline-none focus:shadow-outline"
                  type="text">
