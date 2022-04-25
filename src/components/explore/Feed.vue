@@ -5,7 +5,17 @@
       <div class="content-wrapper h-full flex flex-row">
         <channels id="channels" class="w-1/18 pl-12 pt-12"/>
         <thread-results id="thread-results" class="w-7/16 pl-10 pr-5 h-thread-feed overflow-y-auto hide-scrollbar"/>
-        <thread-detail id="thread-detail" class="w-8/16 pl-7 pr-10 pt-48"/>
+        <thread-detail
+          id="thread-detail"
+          class="w-8/16 pl-7 pr-10 pt-48"
+          :createdDate="created_date"
+          :title="title"
+          :description="description"
+          :response="response"
+          :tags="tags"
+          :status="status"
+          :channel="channel"
+        />
       </div>
     </div>
   </div>
@@ -19,7 +29,19 @@ import ThreadDetail from "./ThreadDetail.vue";
 
 export default {
   name: "feed",
-  components: {ThreadDetail, Search, ThreadResults, Channels}
+  components: {ThreadDetail, Search, ThreadResults, Channels},
+  data() {
+    return {
+      created_date: "Yesterday",
+      title: "Anaemic domain models and ORMs?",
+      description: "Rolling the Persistence Model as the Domain Model seems severely off too due to Object Relational Impedence Missmatch.",
+      response: "ORMs don't enable the creation of Rich Domain models, it simplifies the amount of (often repetitive) work. Making you" +
+          "r domain model anemic with all business logic in services won't save you from boilerplate DTO mapping code.",
+      tags: ["ORM", "Domain-driven-design", "Peewee", "Repository"],
+      status: "OPEN",
+      channel: "#TECH"
+    }
+  },
 }
 </script>
 

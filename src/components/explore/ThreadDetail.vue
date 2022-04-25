@@ -9,7 +9,7 @@
             <status id="status" class="" :status="status"/>
           </span>
           <span class="date pr-7 font-nunito-sans font-regular tracking-tighter text-xs text-gray-500">
-            {{ created_date }}
+            {{ createdDate }}
           </span>
         </div>
         <div class="title pt-1 font-nunito-sans font-extrabold tracking-tighter text-xl text-gray-700">
@@ -63,17 +63,9 @@ import Action from "../Action.vue";
 export default {
   name: "ThreadDetail",
   components: {Action, React, Channel, Tag, Status},
-  data() {
-		return {
-      created_date: "Yesterday",
-      title: "Anaemic domain models and ORMs?",
-      description: "Rolling the Persistence Model as the Domain Model seems severely off too due to Object Relational Impedence Missmatch.",
-      response: "ORMs don't enable the creation of Rich Domain models, it simplifies the amount of (often repetitive) work. Making your domain model anemic with all business logic in services won't save you from boilerplate DTO mapping code.",
-      tags: ["ORM", "Domain-driven-design", "Peewee", "Repository"],
-      status: "OPEN",
-      channel: "#TECH"
-    }
-  }
+  props: [
+    "createdDate", "title", "description", "response", "tags", "status", "channel"
+  ],
 }
 </script>
 
