@@ -16,7 +16,7 @@
         <i class="ri-close-line" style="font-size: 23px; color: #323232"/>
       </button>
       <div v-if="drawerType==='createThread'">
-        <create-thread id="create-thread" class="w-96 h-full overflow-x-scroll bg-neutral50 rounded shadow-xl border"/>
+        <create-thread id="create-thread" class="w-96 h-full overflow-x-scroll bg-slate100 rounded shadow-xl border"/>
       </div>
     </div>
   </body>

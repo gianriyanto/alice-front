@@ -1,7 +1,7 @@
 <template>
   <div id="thread-detail" class="">
     <div class="flex flex-col h-98 pl-7 pt-6 w-full
-                rounded-xl border bg-slate50 border-zinc300 shadow-md">
+                rounded-xl border bg-slate50 border-zinc300">
       <div class="header-container flex flex-col">
         <div class="top flex flex-row justify-between">
           <span class="flex flex-row items-center">
