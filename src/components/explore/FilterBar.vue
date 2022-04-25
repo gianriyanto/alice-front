@@ -1,11 +1,11 @@
 <template>
   <div id="filter-bar" class="">
     <div class="content-wrapper flex flex-col justify-between
-                bg-slate100 w-full h-full pt-5 pb-4 pr-8 pl-8">
+                bg-slate100 w-full h-full pt-5 pb-6 pr-8 pl-8">
       <div class="flex flex-col">
-        <div id="header-container" class="mt-4 flex flex-col">
-        <logo-full id="logo-full" class="pt-2"></logo-full>
-        <span id="header" class="flex flex-row justify-between mt-10">
+        <div id="header-container" class="pt-7 flex flex-col">
+<!--        <logo-full id="logo-full" class="pt-2"></logo-full>-->
+        <span id="header" class="flex flex-row justify-between mt-2">
           <h2 class="text-lg text-gray-800 font-nunito-sans font-extrabold tracking-tight">
             Filters
           </h2>
