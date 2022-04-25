@@ -40,7 +40,7 @@
             </div>
           </div>
           <div id="status-selection" class="mt-7">
-            <label class="font-nunito-sans mb-2 text-sm font-bold text-gray-700">
+            <label class="font-nunito-sans mb-2 text-sm font-bold text-gray-500">
                 Status
             </label>
             <div class="form-check mt-1">
@@ -66,7 +66,7 @@
             </div>
           </div>
           <div id="channel-selection" class="mt-7">
-            <label class="font-nunito-sans mb-2 text-sm font-bold text-gray-700">
+            <label class="font-nunito-sans mb-2 text-sm font-bold text-gray-500">
                 Channel
             </label>
             <div class="channel-chips flex flex-wrap">
@@ -76,7 +76,7 @@
             </div>
           </div>
           <div id="tag-selection" class="mt-7">
-            <label class="font-nunito-sans mb-2 text-sm font-bold text-gray-700">
+            <label class="font-nunito-sans mb-2 text-sm font-bold text-gray-500">
                 Tags
             </label>
             <div class="tag-chips flex flex-wrap">
