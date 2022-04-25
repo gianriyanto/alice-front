@@ -48,6 +48,7 @@ export default {
   data() {
     return {
       threadResults: [],
+      threadDetail: {},
       created_date: "Yesterday",
       title: "Anaemic domain models and ORMs?",
       description: "Rolling the Persistence Model as the Domain Model seems severely off too due to Object Relational Impedence Missmatch.",
@@ -62,8 +63,15 @@ export default {
     this.getThreads()
   },
   methods: {
-    getThreadDetail(id) {
-     console.log(id)
+    getThreadDetail(thread_id) {
+      axios
+        .get(`${import.meta.env.VITE_BASE_URL}/api/thread/${thread_id}`)
+        .then((response) => {
+          this.threadDetail = response.data
+        })
+        .catch((error) => {
+          console.log(`Error fetching thread ${thread_id}`)
+        })
     },
     getThreads() {
       axios
